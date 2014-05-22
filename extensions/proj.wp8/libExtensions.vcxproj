@@ -73,7 +73,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\external\libwebsockets\wp8\include;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -88,8 +88,9 @@
     <Lib>
       <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
       <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
-      <AdditionalLibraryDirectories>..\..\external\libwebsockets\wp8\lib\x86;..\..\cocos2dx\platform\third_party\wp8\libraries\x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcurl.lib;libwebsockets.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,7 +99,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\external\libwebsockets\wp8\include;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -109,8 +110,9 @@
     </Link>
     <Lib>
       <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalLibraryDirectories>..\..\external\libwebsockets\wp8\lib\x86;..\..\cocos2dx\platform\third_party\wp8\libraries\x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>libcurl.lib;libwebsockets.lib;</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -119,7 +121,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\external\libwebsockets\wp8\include;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -133,8 +135,9 @@
     <Lib>
       <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
       <LinkTimeCodeGeneration>false</LinkTimeCodeGeneration>
-      <AdditionalDependencies>libcurl.lib;libwebsockets.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\external\libwebsockets\wp8\lib\arm;..\..\cocos2dx\platform\third_party\wp8\libraries\arm</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
@@ -143,7 +146,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\platform\third_party\winrt\angle\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\libcurl;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8\zlib;$(ProjectDir)..\..\external\libwebsockets\wp8\include;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\..\external\chipmunk\include\chipmunk;$(ProjectDir)..\..\external\sqlite3\include;$(ProjectDir)..\..\external;$(ProjectDir)..\..\cocos2dx;$(ProjectDir)..\..\cocos2dx\include;$(ProjectDir)..\..\cocos2dx\kazmath\include;$(ProjectDir)..\..\cocos2dx\platform\winrt;$(ProjectDir)..\..\cocos2dx\platform\third_party\wp8;$(ProjectDir)..\..\CocosDenshion\include;..\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsWinRT>true</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -154,8 +157,9 @@
     </Link>
     <Lib>
       <AdditionalOptions>/IGNORE:4264 %(AdditionalOptions)</AdditionalOptions>
-      <AdditionalDependencies>libcurl.lib;libwebsockets.lib;</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\..\external\libwebsockets\wp8\lib\arm;..\..\cocos2dx\platform\third_party\wp8\libraries\arm</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -488,8 +492,28 @@
     <ClInclude Include="EditBoxEvent.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets" Condition="Exists('..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets')" />
+    <Import Project="..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets" Condition="Exists('..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets')" />
+    <Import Project="..\..\packages\libwebsockets_wp8.redist.0.0.0.2\build\native\libwebsockets_wp8.redist.targets" Condition="Exists('..\..\packages\libwebsockets_wp8.redist.0.0.0.2\build\native\libwebsockets_wp8.redist.targets')" />
+    <Import Project="..\..\packages\libwebsockets_wp8.0.0.0.2\build\native\libwebsockets_wp8.targets" Condition="Exists('..\..\packages\libwebsockets_wp8.0.0.0.2\build\native\libwebsockets_wp8.targets')" />
+    <Import Project="..\..\packages\libcurl_wp8.redist.0.0.0.2\build\native\libcurl_wp8.redist.targets" Condition="Exists('..\..\packages\libcurl_wp8.redist.0.0.0.2\build\native\libcurl_wp8.redist.targets')" />
+    <Import Project="..\..\packages\libcurl_wp8.0.0.0.2\build\native\libcurl_wp8.targets" Condition="Exists('..\..\packages\libcurl_wp8.0.0.0.2\build\native\libcurl_wp8.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets'))" />
+    <Error Condition="!Exists('..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libwebsockets_wp8.redist.0.0.0.2\build\native\libwebsockets_wp8.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libwebsockets_wp8.redist.0.0.0.2\build\native\libwebsockets_wp8.redist.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libwebsockets_wp8.0.0.0.2\build\native\libwebsockets_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libwebsockets_wp8.0.0.0.2\build\native\libwebsockets_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libcurl_wp8.redist.0.0.0.2\build\native\libcurl_wp8.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libcurl_wp8.redist.0.0.0.2\build\native\libcurl_wp8.redist.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libcurl_wp8.0.0.0.2\build\native\libcurl_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libcurl_wp8.0.0.0.2\build\native\libcurl_wp8.targets'))" />
+  </Target>
 </Project>

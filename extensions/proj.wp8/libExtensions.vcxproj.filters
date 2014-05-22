@@ -1066,4 +1066,7 @@
     </ClInclude>
     <ClInclude Include="..\ExtensionExport.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
 </Project>

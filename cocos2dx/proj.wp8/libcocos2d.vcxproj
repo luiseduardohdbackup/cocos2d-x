@@ -82,7 +82,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <CompileAsWinRT>true</CompileAsWinRT>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/zlib;../platform/third_party/wp8/libpng;../platform/third_party/wp8/freetype/include;../platform/third_party/wp8/libjpeg;../platform/third_party/wp8/libtiff;../platform/third_party/wp8/libwebp;../platform/third_party/winrt/angle/include;../platform/third_party/winrt/angle/src/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/libwebp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
@@ -95,8 +95,9 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\platform\third_party\wp8\libraries\x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d11.lib;zlib.lib;libpng.lib;libjpeg.lib;libtiff.lib;freetype.lib;xaudio2.lib;libGLESv2_phone.lib;libEGL_phone.lib;esUtil_phone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/IGNORE:4264</AdditionalOptions>
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -109,7 +110,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <CompileAsWinRT>true</CompileAsWinRT>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/zlib;../platform/third_party/wp8/libpng;../platform/third_party/wp8/freetype/include;../platform/third_party/wp8/libjpeg;../platform/third_party/wp8/libtiff;../platform/third_party/wp8/libwebp;../platform/third_party/winrt/angle/include;../platform/third_party/winrt/angle/src/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/libwebp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -119,8 +120,9 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\platform\third_party\wp8\libraries\x86</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d11.lib;zlib.lib;libpng.lib;libjpeg.lib;libtiff.lib;freetype.lib;xaudio2.lib;libGLESv2_phone.lib;libEGL_phone.lib;esUtil_phone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/IGNORE:4264</AdditionalOptions>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
@@ -132,7 +134,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <CompileAsWinRT>true</CompileAsWinRT>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/zlib;../platform/third_party/wp8/libpng;../platform/third_party/wp8/freetype/include;../platform/third_party/wp8/libjpeg;../platform/third_party/wp8/libtiff;../platform/third_party/wp8/libwebp;../platform/third_party/winrt/angle/include;../platform/third_party/winrt/angle/src/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/libwebp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
@@ -144,8 +146,9 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\platform\third_party\wp8\libraries\arm</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d11.lib;zlib.lib;libpng.lib;libjpeg.lib;libtiff.lib;freetype.lib;xaudio2.lib;libGLESv2_phone.lib;libEGL_phone.lib;esUtil_phone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/IGNORE:4264</AdditionalOptions>
       <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
@@ -158,7 +161,7 @@
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
       <CompileAsWinRT>true</CompileAsWinRT>
       <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
-      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/zlib;../platform/third_party/wp8/libpng;../platform/third_party/wp8/freetype/include;../platform/third_party/wp8/libjpeg;../platform/third_party/wp8/libtiff;../platform/third_party/wp8/libwebp;../platform/third_party/winrt/angle/include;../platform/third_party/winrt/angle/src/common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>../platform/wp8;../platform/winrt;../include;../;../kazmath/include;../kazmath/include/GL;../platform/third_party/wp8/libwebp;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4267;4251;4244;4453;%(DisableSpecificWarnings)</DisableSpecificWarnings>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <ForcedIncludeFiles>pch.h</ForcedIncludeFiles>
@@ -168,8 +171,9 @@
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>..\platform\third_party\wp8\libraries\arm</AdditionalLibraryDirectories>
-      <AdditionalDependencies>d3d11.lib;zlib.lib;libpng.lib;libjpeg.lib;libtiff.lib;freetype.lib;xaudio2.lib;libGLESv2_phone.lib;libEGL_phone.lib;esUtil_phone.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>d3d11.lib;xaudio2.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalOptions>/IGNORE:4264</AdditionalOptions>
       <IgnoreSpecificDefaultLibraries>ole32.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
     </Link>
@@ -723,8 +727,30 @@
     <ClInclude Include="..\touch_dispatcher\CCTouchHandler.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\..\packages\libpng_wp8.0.0.0.1\build\native\libpng_wp8.targets" Condition="Exists('..\..\packages\libpng_wp8.0.0.0.1\build\native\libpng_wp8.targets')" />
+    <Import Project="..\..\packages\libtiff_wp8.0.0.0.1\build\native\libtiff_wp8.targets" Condition="Exists('..\..\packages\libtiff_wp8.0.0.0.1\build\native\libtiff_wp8.targets')" />
+    <Import Project="..\..\packages\freetype_wp8.0.0.0.1\build\native\freetype_wp8.targets" Condition="Exists('..\..\packages\freetype_wp8.0.0.0.1\build\native\freetype_wp8.targets')" />
+    <Import Project="..\..\packages\zlib_wp8.0.0.0.1\build\native\zlib_wp8.targets" Condition="Exists('..\..\packages\zlib_wp8.0.0.0.1\build\native\zlib_wp8.targets')" />
+    <Import Project="..\..\packages\libjpeg_wp8.0.0.0.1\build\native\libjpeg_wp8.targets" Condition="Exists('..\..\packages\libjpeg_wp8.0.0.0.1\build\native\libjpeg_wp8.targets')" />
+    <Import Project="..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets" Condition="Exists('..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets')" />
+    <Import Project="..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets" Condition="Exists('..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\libpng_wp8.0.0.0.1\build\native\libpng_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libpng_wp8.0.0.0.1\build\native\libpng_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libtiff_wp8.0.0.0.1\build\native\libtiff_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libtiff_wp8.0.0.0.1\build\native\libtiff_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\freetype_wp8.0.0.0.1\build\native\freetype_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\freetype_wp8.0.0.0.1\build\native\freetype_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\zlib_wp8.0.0.0.1\build\native\zlib_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\zlib_wp8.0.0.0.1\build\native\zlib_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\libjpeg_wp8.0.0.0.1\build\native\libjpeg_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\libjpeg_wp8.0.0.0.1\build\native\libjpeg_wp8.targets'))" />
+    <Error Condition="!Exists('..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\angle_wp8.redist.0.0.0.1\build\native\angle_wp8.redist.targets'))" />
+    <Error Condition="!Exists('..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\angle_wp8.0.0.0.1\build\native\angle_wp8.targets'))" />
+  </Target>
 </Project>
