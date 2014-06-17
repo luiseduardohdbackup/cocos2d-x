@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{0092f954-9a62-481f-8bba-0797f772b96c}</ItemsProjectGuid>
+    <ItemsRootNamespace>chipmunk</ItemsRootNamespace>
+    <ItemsProjectName>chipmunk.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\chipmunk.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\chipmunk_ffi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\chipmunk_private.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\chipmunk_types.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\chipmunk_unsafe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpConstraint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpDampedRotarySpring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpDampedSpring.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpGearJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpGrooveJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpPinJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpPivotJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpRatchetJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpRotaryLimitJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpSimpleMotor.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\cpSlideJoint.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\constraints\util.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpArbiter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpBB.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpBody.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpPolyShape.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpShape.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpSpace.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpSpatialIndex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\include\chipmunk\cpVect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\src\prime.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\chipmunk.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpConstraint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpDampedRotarySpring.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpDampedSpring.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpGearJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpGrooveJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpPinJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpPivotJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpRatchetJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpRotaryLimitJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpSimpleMotor.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\constraints\cpSlideJoint.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpArbiter.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpArray.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpBB.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpBBTree.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpBody.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpCollision.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpHashSet.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpPolyShape.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpShape.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpace.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpaceComponent.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpaceHash.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpaceQuery.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpaceStep.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSpatialIndex.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpSweep1D.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\src\cpVect.c">
+      <CompileAs>CompileAsCpp</CompileAs>
+    </ClCompile>
+  </ItemGroup>
+</Project>
