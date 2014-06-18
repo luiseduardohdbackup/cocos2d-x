@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{40a73243-96a4-4b99-aebe-d2dfa28c6741}</ItemsProjectGuid>
+    <ItemsRootNamespace>libCocosStudio</ItemsRootNamespace>
+    <ItemsProjectName>libCocosStudio.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmature.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureAnimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDataManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDefine.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBatchNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBone.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCColliderDetector.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComAttribute.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComAudio.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComRender.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDataReaderHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDatas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDecorativeDisplay.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCInputDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCProcessBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSGUIReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSkin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteFrameCacheHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSSceneReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ButtonReader\ButtonReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\CheckBoxReader\CheckBoxReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ImageViewReader\ImageViewReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LayoutReader\LayoutReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ListViewReader\ListViewReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LoadingBarReader\LoadingBarReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\PageViewReader\PageViewReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ScrollViewReader\ScrollViewReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\SliderReader\SliderReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextAtlasReader\TextAtlasReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextBMFontReader\TextBMFontReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextFieldReader\TextFieldReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmature.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDataManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDefine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBatchNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCColliderDetector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComAttribute.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComAudio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComRender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDataReaderHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDatas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDecorativeDisplay.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCInputDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCProcessBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSGUIReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSkin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteFrameCacheHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSSceneReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoStudio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ButtonReader\ButtonReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\CheckBoxReader\CheckBoxReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ImageViewReader\ImageViewReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LayoutReader\LayoutReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ListViewReader\ListViewReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LoadingBarReader\LoadingBarReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\PageViewReader\PageViewReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ScrollViewReader\ScrollViewReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\SliderReader\SliderReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextAtlasReader\TextAtlasReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextBMFontReader\TextBMFontReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextFieldReader\TextFieldReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReaderProtocol.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
+  </ItemGroup>
+</Project>
