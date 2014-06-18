@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionObject.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmature.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureAnimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDataManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDefine.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBatchNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBone.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCColliderDetector.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComAttribute.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComAudio.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComController.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCComRender.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDataReaderHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDatas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDecorativeDisplay.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCInputDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCProcessBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSGUIReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSkin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteFrameCacheHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSSceneReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReader.cpp">
+      <Filter>WidgetReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ButtonReader\ButtonReader.cpp">
+      <Filter>WidgetReader\ButtonReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\CheckBoxReader\CheckBoxReader.cpp">
+      <Filter>WidgetReader\CheckBoxReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ImageViewReader\ImageViewReader.cpp">
+      <Filter>WidgetReader\ImageViewReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LayoutReader\LayoutReader.cpp">
+      <Filter>WidgetReader\LayoutReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ListViewReader\ListViewReader.cpp">
+      <Filter>WidgetReader\ListViewReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LoadingBarReader\LoadingBarReader.cpp">
+      <Filter>WidgetReader\LoadingBarReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\PageViewReader\PageViewReader.cpp">
+      <Filter>WidgetReader\PageViewReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ScrollViewReader\ScrollViewReader.cpp">
+      <Filter>WidgetReader\ScrollViewReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\SliderReader\SliderReader.cpp">
+      <Filter>WidgetReader\SliderReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextAtlasReader\TextAtlasReader.cpp">
+      <Filter>WidgetReader\TextAtlasReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextBMFontReader\TextBMFontReader.cpp">
+      <Filter>WidgetReader\TextBMFontReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextFieldReader\TextFieldReader.cpp">
+      <Filter>WidgetReader\TextFieldReader</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.cpp">
+      <Filter>WidgetReader\TextReader</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmature.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDataManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCArmatureDefine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBatchNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBone.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCColliderDetector.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComAttribute.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComAudio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComController.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCComRender.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDataReaderHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDatas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDecorativeDisplay.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCDisplayManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCInputDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCProcessBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSGUIReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSkin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteFrameCacheHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSSceneReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoStudio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReader.h">
+      <Filter>WidgetReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\WidgetReaderProtocol.h">
+      <Filter>WidgetReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ButtonReader\ButtonReader.h">
+      <Filter>WidgetReader\ButtonReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\CheckBoxReader\CheckBoxReader.h">
+      <Filter>WidgetReader\CheckBoxReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ImageViewReader\ImageViewReader.h">
+      <Filter>WidgetReader\ImageViewReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LayoutReader\LayoutReader.h">
+      <Filter>WidgetReader\LayoutReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ListViewReader\ListViewReader.h">
+      <Filter>WidgetReader\ListViewReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\LoadingBarReader\LoadingBarReader.h">
+      <Filter>WidgetReader\LoadingBarReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\PageViewReader\PageViewReader.h">
+      <Filter>WidgetReader\PageViewReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\ScrollViewReader\ScrollViewReader.h">
+      <Filter>WidgetReader\ScrollViewReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\SliderReader\SliderReader.h">
+      <Filter>WidgetReader\SliderReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextAtlasReader\TextAtlasReader.h">
+      <Filter>WidgetReader\TextAtlasReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextBMFontReader\TextBMFontReader.h">
+      <Filter>WidgetReader\TextBMFontReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextFieldReader\TextFieldReader.h">
+      <Filter>WidgetReader\TextFieldReader</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.h">
+      <Filter>WidgetReader\TextReader</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="WidgetReader">
+      <UniqueIdentifier>{e90c082a-596e-4141-ba47-b87ceb4437e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\ButtonReader">
+      <UniqueIdentifier>{503384cf-2da1-44e0-a924-88de2d2d366c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\CheckBoxReader">
+      <UniqueIdentifier>{3118b910-4c83-4051-8e69-b853e27fcd40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\ImageViewReader">
+      <UniqueIdentifier>{101de788-eacb-4ac9-8adc-2e9f265b8079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\LayoutReader">
+      <UniqueIdentifier>{4d5697fb-5323-4934-b7c0-27b3dedc7cda}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\ListViewReader">
+      <UniqueIdentifier>{b5d941bd-6b89-4503-886e-484cdf1ba5b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\LoadingBarReader">
+      <UniqueIdentifier>{82e994b4-b247-4857-8d21-ff77dab08099}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\PageViewReader">
+      <UniqueIdentifier>{5cb7abce-dda4-4110-8a29-3addfbe9a9c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\ScrollViewReader">
+      <UniqueIdentifier>{b51fc5f5-0129-495c-b4a7-f2129b02ef3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\SliderReader">
+      <UniqueIdentifier>{5e64cd81-b87b-4c9a-8370-46be5b9d7cc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\TextAtlasReader">
+      <UniqueIdentifier>{dd422d7a-f22e-4f78-8f25-a1d6d7aa516b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\TextBMFontReader">
+      <UniqueIdentifier>{44685d25-2bcd-458c-81ff-1874ccb29c1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\TextFieldReader">
+      <UniqueIdentifier>{c89e0eba-89ce-49a6-9291-e5839c73f2d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="WidgetReader\TextReader">
+      <UniqueIdentifier>{1135a836-cd79-4254-9a48-a94ef1116080}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
