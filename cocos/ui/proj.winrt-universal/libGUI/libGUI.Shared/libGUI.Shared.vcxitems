@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{4afb15ba-1f2b-4ef5-858c-3c36245ff18c}</ItemsProjectGuid>
+    <ItemsRootNamespace>libGUI</ItemsRootNamespace>
+    <ItemsProjectName>libGUI.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCProtectedNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CocosGUI.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIButton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UICheckBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIHBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIHelper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIImageView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UILayout.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UILayoutManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UILayoutParameter.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIListView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UILoadingBar.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIPageView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIRelativeBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIRichText.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIScrollView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UISlider.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIText.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UITextAtlas.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UITextBMFont.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UITextField.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIVBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\UIWidget.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCProtectedNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocosGUI.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUIDefine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UICheckBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIDeprecated.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIHBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIImageView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UILayout.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UILayoutManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UILayoutParameter.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIListView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UILoadingBar.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIPageView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIRelativeBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIRichText.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIScrollView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UISlider.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIText.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UITextAtlas.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UITextBMFont.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UITextField.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIVBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIVideoPlayer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\UIWidget.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\CMakeLists.txt" />
+  </ItemGroup>
+</Project>

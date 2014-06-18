@@ -401,7 +401,6 @@
     <ClCompile Include="..\platform\winrt\CCGLView.cpp" />
     <ClCompile Include="..\platform\winrt\CCPrecompiledShaders.cpp" />
     <ClCompile Include="..\platform\winrt\CCPThreadWinRT.cpp" />
-    <ClCompile Include="..\platform\winrt\CCStdC.cpp" />
     <ClCompile Include="..\platform\winrt\CCWinRTUtils.cpp" />
     <ClCompile Include="..\platform\winrt\DirectXBase.cpp" />
     <ClCompile Include="..\platform\winrt\InputEvent.cpp" />

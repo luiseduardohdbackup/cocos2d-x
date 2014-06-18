@@ -80,9 +80,6 @@
     <ClCompile Include="..\platform\winrt\CCPThreadWinRT.cpp">
       <Filter>platform\winrt</Filter>
     </ClCompile>
-    <ClCompile Include="..\platform\winrt\CCStdC.cpp">
-      <Filter>platform\winrt</Filter>
-    </ClCompile>
     <ClCompile Include="..\platform\winrt\CCWinRTUtils.cpp">
       <Filter>platform\winrt</Filter>
     </ClCompile>
