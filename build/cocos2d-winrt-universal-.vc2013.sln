@@ -35,6 +35,14 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCocosStudio.Windows", ".
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libCocosStudio.WindowsPhone", "..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.WindowsPhone\libCocosStudio.WindowsPhone.vcxproj", "{B2FC1DFE-90A5-4464-8691-982FAECAE678}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libGUI", "libGUI", "{AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGUI.Shared", "..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems", "{4AFB15BA-1F2B-4EF5-858C-3C36245FF18C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGUI.Windows", "..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Windows\libGUI.Windows.vcxproj", "{D9D4007F-E49C-4074-9ABD-01702A694A8A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGUI.WindowsPhone", "..\cocos\ui\proj.winrt-universal\libGUI\libGUI.WindowsPhone\libGUI.WindowsPhone.vcxproj", "{CC297EB9-561B-47FB-BB4F-69F49DD78597}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{c416026e-f95f-4ba3-bdd3-ad8bf76c600f}*SharedItemsImports = 4
@@ -42,12 +50,15 @@ Global
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e41d38f4-8dfa-454b-8abe-f6e7834cc598}*SharedItemsImports = 9
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{b2fc1dfe-90a5-4464-8691-982faecae678}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{03d19f61-c444-4126-8627-0a1aee8b81a5}*SharedItemsImports = 4
+		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{cc297eb9-561b-47fb-bb4f-69f49dd78597}*SharedItemsImports = 4
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{4f56a672-e128-4f43-9b31-52b172f7a0bf}*SharedItemsImports = 9
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{15e2d861-b840-42fd-bae4-5188c96a2124}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{40a73243-96a4-4b99-aebe-d2dfa28c6741}*SharedItemsImports = 9
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{2ca6e6a9-b1aa-4144-a630-8ab928966631}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e544493c-38a2-49d9-aa92-c5587a6b3474}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{0c4dfc12-dd2b-4a29-b6f4-fe6015524e24}*SharedItemsImports = 4
+		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{d9d4007f-e49c-4074-9abd-01702a694a8a}*SharedItemsImports = 4
+		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{4afb15ba-1f2b-4ef5-858c-3c36245ff18c}*SharedItemsImports = 9
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{8c051752-4ffc-45b8-865e-bb10bf824f69}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +158,28 @@ Global
 		{B2FC1DFE-90A5-4464-8691-982FAECAE678}.Release|Win32.ActiveCfg = Release|Win32
 		{B2FC1DFE-90A5-4464-8691-982FAECAE678}.Release|Win32.Build.0 = Release|Win32
 		{B2FC1DFE-90A5-4464-8691-982FAECAE678}.Release|x64.ActiveCfg = Release|Win32
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|ARM.ActiveCfg = Debug|ARM
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|ARM.Build.0 = Debug|ARM
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|Win32.Build.0 = Debug|Win32
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|x64.ActiveCfg = Debug|x64
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Debug|x64.Build.0 = Debug|x64
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|ARM.ActiveCfg = Release|ARM
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|ARM.Build.0 = Release|ARM
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|Win32.ActiveCfg = Release|Win32
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|Win32.Build.0 = Release|Win32
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|x64.ActiveCfg = Release|x64
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A}.Release|x64.Build.0 = Release|x64
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Debug|ARM.Build.0 = Debug|ARM
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Debug|Win32.Build.0 = Debug|Win32
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Debug|x64.ActiveCfg = Debug|Win32
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|ARM.ActiveCfg = Release|ARM
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|ARM.Build.0 = Release|ARM
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|Win32.ActiveCfg = Release|Win32
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|Win32.Build.0 = Release|Win32
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -164,5 +197,8 @@ Global
 		{40A73243-96A4-4B99-AEBE-D2DFA28C6741} = {FCEA112B-612F-4EF7-A65A-7F5FC9DBB0C5}
 		{0C4DFC12-DD2B-4A29-B6F4-FE6015524E24} = {FCEA112B-612F-4EF7-A65A-7F5FC9DBB0C5}
 		{B2FC1DFE-90A5-4464-8691-982FAECAE678} = {FCEA112B-612F-4EF7-A65A-7F5FC9DBB0C5}
+		{4AFB15BA-1F2B-4EF5-858C-3C36245FF18C} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
+		{D9D4007F-E49C-4074-9ABD-01702A694A8A} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
+		{CC297EB9-561B-47FB-BB4F-69F49DD78597} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
 	EndGlobalSection
 EndGlobal
