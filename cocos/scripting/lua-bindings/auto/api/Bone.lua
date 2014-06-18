@@ -52,11 +52,6 @@
 -- @param self
         
 --------------------------------
--- @function [parent=#Bone] getName 
--- @param self
--- @return string#string ret (return value: string)
-        
---------------------------------
 -- @function [parent=#Bone] setTransformDirty 
 -- @param self
 -- @param #bool bool
@@ -101,11 +96,6 @@
 -- @param #ccs.DisplayData displaydata
 -- @param #int int
 
---------------------------------
--- @function [parent=#Bone] setName 
--- @param self
--- @param #string str
-        
 --------------------------------
 -- @function [parent=#Bone] removeFromParent 
 -- @param self
@@ -162,7 +152,7 @@
 --------------------------------
 -- @function [parent=#Bone] getNodeToArmatureTransform 
 -- @param self
--- @return Mat4#Mat4 ret (return value: cc.Mat4)
+-- @return mat4_table#mat4_table ret (return value: mat4_table)
         
 --------------------------------
 -- @function [parent=#Bone] getDisplayManager 
@@ -202,7 +192,7 @@
 --------------------------------
 -- @function [parent=#Bone] getNodeToWorldTransform 
 -- @param self
--- @return Mat4#Mat4 ret (return value: cc.Mat4)
+-- @return mat4_table#mat4_table ret (return value: mat4_table)
         
 --------------------------------
 -- @function [parent=#Bone] update 
