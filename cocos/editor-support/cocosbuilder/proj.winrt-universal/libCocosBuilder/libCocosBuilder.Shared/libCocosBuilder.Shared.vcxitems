@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{e41d38f4-8dfa-454b-8abe-f6e7834cc598}</ItemsProjectGuid>
+    <ItemsRootNamespace>libCocosBuilder</ItemsRootNamespace>
+    <ItemsProjectName>libCocosBuilder.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBAnimationManager.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBFileLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBKeyframe.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBMemberVariableAssigner.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBSelectorResolver.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBSequence.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCBSequenceProperty.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCControlButtonLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCControlLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCLabelBMFontLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCLabelTTFLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerColorLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerGradientLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCMenuItemImageLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCMenuItemLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCMenuLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCNode+CCBRelativePositioning.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCNodeLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCNodeLoaderLibrary.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCNodeLoaderListener.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCParticleSystemQuadLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCScale9SpriteLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCScrollViewLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocosBuilder.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBAnimationManager.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBFileLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBKeyframe.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBSequence.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCBSequenceProperty.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCControlButtonLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCControlLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCLabelBMFontLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCLabelTTFLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerColorLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerGradientLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCLayerLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCMenuItemImageLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCMenuItemLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCNode+CCBRelativePositioning.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCNodeLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCNodeLoaderLibrary.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCParticleSystemQuadLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCScale9SpriteLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCScrollViewLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCSpriteLoader.cpp" />
+  </ItemGroup>
+</Project>
