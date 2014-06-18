@@ -27,8 +27,6 @@ THE SOFTWARE.
 #define __CC_STD_C_H__
 
 #include "base/CCPlatformConfig.h"
-#if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT || CC_TARGET_PLATFORM == CC_PLATFORM_WP8
-
 
 #include "base/CCPlatformMacros.h"
 #include <float.h>
@@ -59,6 +57,15 @@ typedef SSIZE_T ssize_t;
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stdint.h>
+
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN 1
+#endif
+#include <Windows.h>
+
+#define _WINSOCKAPI_
+#include <WinSock2.h>
 
 #ifndef M_PI
   #define M_PI      3.14159265358
@@ -81,36 +88,10 @@ typedef SSIZE_T ssize_t;
 #define MAX(x,y) (((x) < (y)) ? (y) : (x))
 #endif  // MAX
 
-#include <stdint.h>
 
-// Structure timeval has define in winsock.h, include windows.h for it.
-#if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
-#define _WINSOCKAPI_
-#include <WinSock2.h>
-#elif CC_TARGET_PLATFORM == CC_PLATFORM_WINRT
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN 1
-#endif
 
-#include <Windows.h>
 
-#undef timeval
-struct timeval
-{
-	long tv_sec;		// seconds
-	long tv_usec;    // microSeconds
-};
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_WP8
 
-struct timezone
-{
-    int tz_minuteswest;
-    int tz_dsttime;
-};
-
-int CC_DLL gettimeofday(struct timeval *, struct timezone *);
-
-#endif // CC_TARGET_PLATFORM == CC_PLATFORM_WINRT || CC_TARGET_PLATFORM == CC_PLATFORM_WP8
 
 #endif  // __CC_STD_C_H__
 
