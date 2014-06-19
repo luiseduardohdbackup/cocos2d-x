@@ -27,6 +27,8 @@ THE SOFTWARE.
 #define __CC_STD_C_H__
 
 #include "base/CCPlatformConfig.h"
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT || CC_TARGET_PLATFORM == CC_PLATFORM_WP8
+
 
 #include "base/CCPlatformMacros.h"
 #include <float.h>
@@ -40,11 +42,11 @@ typedef SSIZE_T ssize_t;
 // for math.h on win32 platform
 
 #if !defined(_USE_MATH_DEFINES)
-    #define _USE_MATH_DEFINES       // make M_PI can be use
+#define _USE_MATH_DEFINES       // make M_PI can be use
 #endif
 
 #if !defined(isnan)
-    #define isnan   _isnan
+#define isnan   _isnan
 #endif
 
 #ifndef snprintf
@@ -57,27 +59,18 @@ typedef SSIZE_T ssize_t;
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdint.h>
-
-#ifndef WIN32_LEAN_AND_MEAN
-#define WIN32_LEAN_AND_MEAN 1
-#endif
-#include <Windows.h>
-
-#define _WINSOCKAPI_
-#include <WinSock2.h>
 
 #ifndef M_PI
-  #define M_PI      3.14159265358
+#define M_PI      3.14159265358
 #endif
 #ifndef M_PI_2
-  #define M_PI_2    1.57079632679
+#define M_PI_2    1.57079632679
 #endif
 
 
 // for MIN MAX and sys/time.h on win32 platform
 #ifndef NOMINMAX
-  #define NOMINMAX
+#define NOMINMAX
 #endif
 
 #ifndef MIN
@@ -88,10 +81,35 @@ typedef SSIZE_T ssize_t;
 #define MAX(x,y) (((x) < (y)) ? (y) : (x))
 #endif  // MAX
 
+#include <stdint.h>
 
+// Structure timeval has define in winsock.h, include windows.h for it.
+#if WINAPI_FAMILY_PARTITION(WINAPI_PARTITION_PHONE)
+#define _WINSOCKAPI_
+#include <WinSock2.h>
+#else
+#ifndef WIN32_LEAN_AND_MEAN
+#define WIN32_LEAN_AND_MEAN 1
+#endif
 
+#include <Windows.h>
 
+#undef timeval
+struct timeval
+{
+    long tv_sec;    // seconds
+    long tv_usec;   // microSeconds
+};
+#endif // CC_TARGET_PLATFORM == CC_PLATFORM_WP8
 
+struct timezone
+{
+    int tz_minuteswest;
+    int tz_dsttime;
+};
+
+int CC_DLL gettimeofday(struct timeval *, struct timezone *);
+
+#endif 
 
 #endif  // __CC_STD_C_H__
-
