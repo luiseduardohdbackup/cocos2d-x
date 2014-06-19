@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30324.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libSpine", "libSpine", "{680A7D23-0DD1-4007-9B0E-A6F8378D27F4}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.Shared", "libSpine\libSpine.Shared\libSpine.Shared.vcxitems", "{1CA9317C-4BF8-4A88-83CB-B21D34C0B54A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.Windows", "libSpine\libSpine.Windows\libSpine.Windows.vcxproj", "{313D61AF-242C-4620-9518-1178EAA70CEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.WindowsPhone", "libSpine\libSpine.WindowsPhone\libSpine.WindowsPhone.vcxproj", "{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{da19ae87-4d38-448e-af71-31b8ab5cffa5}*SharedItemsImports = 4
+		libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{1ca9317c-4bf8-4a88-83cb-b21d34c0b54a}*SharedItemsImports = 9
+		libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{313d61af-242c-4620-9518-1178eaa70cee}*SharedItemsImports = 4
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|ARM = Release|ARM
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|ARM.Build.0 = Debug|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|Win32.Build.0 = Debug|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|x64.ActiveCfg = Debug|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|x64.Build.0 = Debug|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|ARM.ActiveCfg = Release|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|ARM.Build.0 = Release|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|Win32.ActiveCfg = Release|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|Win32.Build.0 = Release|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|x64.ActiveCfg = Release|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|x64.Build.0 = Release|x64
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|ARM.Build.0 = Debug|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|Win32.Build.0 = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|x64.ActiveCfg = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|ARM.ActiveCfg = Release|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|ARM.Build.0 = Release|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|Win32.ActiveCfg = Release|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|Win32.Build.0 = Release|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|x64.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1CA9317C-4BF8-4A88-83CB-B21D34C0B54A} = {680A7D23-0DD1-4007-9B0E-A6F8378D27F4}
+		{313D61AF-242C-4620-9518-1178EAA70CEE} = {680A7D23-0DD1-4007-9B0E-A6F8378D27F4}
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5} = {680A7D23-0DD1-4007-9B0E-A6F8378D27F4}
+	EndGlobalSection
+EndGlobal
