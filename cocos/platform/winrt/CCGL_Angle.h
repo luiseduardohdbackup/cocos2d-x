@@ -39,6 +39,10 @@ THE SOFTWARE.
 #include "esUtil.h"
 #include "ccMacros.h"
 
+#ifndef GL_GLEXT_PROTOTYPES
+#define GL_GLEXT_PROTOTYPES
+#endif
+
 #define GL_WRITE_ONLY_OES                                       0x88B9
 #define GL_BUFFER_ACCESS_OES                                    0x88BB
 #define GL_BUFFER_MAPPED_OES                                    0x88BC
