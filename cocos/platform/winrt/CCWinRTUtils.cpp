@@ -99,11 +99,30 @@ std::string PlatformStringToString(Platform::String^ s) {
 float ConvertDipsToPixels(float dips)
 {
    static const float dipsPerInch = 96.0f;
-   return floor(dips * DisplayProperties::LogicalDpi / dipsPerInch + 0.5f); // Round to nearest integer.
+   float logicalDPI;
+
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
+    logicalDPI = DisplayProperties::LogicalDpi;
+#else
+    DisplayInformation^ currentDisplayInformation = DisplayInformation::GetForCurrentView();
+    logicalDPI = currentDisplayInformation->LogicalDpi;
+#endif
+
+    return floor(((dips * logicalDPI) / dipsPerInch) + 0.5f); // Round to nearest integer.
 }
 
-float getScaledDPIValue(float v) {
-	auto dipFactor = DisplayProperties::LogicalDpi / 96.0f;
+float getScaledDPIValue(float v) 
+{
+    float logicalDPI;
+
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
+    logicalDPI = DisplayProperties::LogicalDpi;
+#else
+    DisplayInformation^ currentDisplayInformation = DisplayInformation::GetForCurrentView();
+    logicalDPI = currentDisplayInformation->LogicalDpi;
+#endif
+
+    auto dipFactor = logicalDPI / 96.0f;
 	return v * dipFactor;
 }
 
