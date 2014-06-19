@@ -488,6 +488,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\renderer\CCTextureCache.cpp">
       <Filter>renderer</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\CCStdC.cpp">
+      <Filter>platform\winrt</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
@@ -1043,6 +1046,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\renderer\CCTextureCache.h">
       <Filter>renderer</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\platform\winrt\CCStdC.h">
+      <Filter>platform\winrt</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="2d">
@@ -1089,6 +1095,9 @@
     </Filter>
     <Filter Include="physics\chipmunk">
       <UniqueIdentifier>{356ce81a-e147-45ae-b34d-974d389d23e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="platform\winrt">
+      <UniqueIdentifier>{adbd483f-fda3-4002-bea2-63c883f33ba1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
