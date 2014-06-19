@@ -43,17 +43,28 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGUI.Windows", "..\cocos\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGUI.WindowsPhone", "..\cocos\ui\proj.winrt-universal\libGUI\libGUI.WindowsPhone\libGUI.WindowsPhone.vcxproj", "{CC297EB9-561B-47FB-BB4F-69F49DD78597}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libSpine", "libSpine", "{7E8EDDA4-1F2F-4F11-9F2D-D377BE123AEA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.Shared", "..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems", "{1CA9317C-4BF8-4A88-83CB-B21D34C0B54A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.Windows", "..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Windows\libSpine.Windows.vcxproj", "{313D61AF-242C-4620-9518-1178EAA70CEE}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libSpine.WindowsPhone", "..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.WindowsPhone\libSpine.WindowsPhone.vcxproj", "{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{c416026e-f95f-4ba3-bdd3-ad8bf76c600f}*SharedItemsImports = 4
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{0092f954-9a62-481f-8bba-0797f772b96c}*SharedItemsImports = 9
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e41d38f4-8dfa-454b-8abe-f6e7834cc598}*SharedItemsImports = 9
+		..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{da19ae87-4d38-448e-af71-31b8ab5cffa5}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{b2fc1dfe-90a5-4464-8691-982faecae678}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{03d19f61-c444-4126-8627-0a1aee8b81a5}*SharedItemsImports = 4
+		..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{1ca9317c-4bf8-4a88-83cb-b21d34c0b54a}*SharedItemsImports = 9
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{cc297eb9-561b-47fb-bb4f-69f49dd78597}*SharedItemsImports = 4
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{4f56a672-e128-4f43-9b31-52b172f7a0bf}*SharedItemsImports = 9
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{15e2d861-b840-42fd-bae4-5188c96a2124}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{40a73243-96a4-4b99-aebe-d2dfa28c6741}*SharedItemsImports = 9
+		..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{313d61af-242c-4620-9518-1178eaa70cee}*SharedItemsImports = 4
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{2ca6e6a9-b1aa-4144-a630-8ab928966631}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e544493c-38a2-49d9-aa92-c5587a6b3474}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{0c4dfc12-dd2b-4a29-b6f4-fe6015524e24}*SharedItemsImports = 4
@@ -180,6 +191,28 @@ Global
 		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|Win32.ActiveCfg = Release|Win32
 		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|Win32.Build.0 = Release|Win32
 		{CC297EB9-561B-47FB-BB4F-69F49DD78597}.Release|x64.ActiveCfg = Release|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|ARM.ActiveCfg = Debug|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|ARM.Build.0 = Debug|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|Win32.Build.0 = Debug|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|x64.ActiveCfg = Debug|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Debug|x64.Build.0 = Debug|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|ARM.ActiveCfg = Release|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|ARM.Build.0 = Release|ARM
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|Win32.ActiveCfg = Release|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|Win32.Build.0 = Release|Win32
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|x64.ActiveCfg = Release|x64
+		{313D61AF-242C-4620-9518-1178EAA70CEE}.Release|x64.Build.0 = Release|x64
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|ARM.ActiveCfg = Debug|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|ARM.Build.0 = Debug|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|Win32.Build.0 = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Debug|x64.ActiveCfg = Debug|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|ARM.ActiveCfg = Release|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|ARM.Build.0 = Release|ARM
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|Win32.ActiveCfg = Release|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|Win32.Build.0 = Release|Win32
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -200,5 +233,8 @@ Global
 		{4AFB15BA-1F2B-4EF5-858C-3C36245FF18C} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
 		{D9D4007F-E49C-4074-9ABD-01702A694A8A} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
 		{CC297EB9-561B-47FB-BB4F-69F49DD78597} = {AD9C8EA1-DE86-4B38-A577-DC6AF48A8C1B}
+		{1CA9317C-4BF8-4A88-83CB-B21D34C0B54A} = {7E8EDDA4-1F2F-4F11-9F2D-D377BE123AEA}
+		{313D61AF-242C-4620-9518-1178EAA70CEE} = {7E8EDDA4-1F2F-4F11-9F2D-D377BE123AEA}
+		{DA19AE87-4D38-448E-AF71-31B8AB5CFFA5} = {7E8EDDA4-1F2F-4F11-9F2D-D377BE123AEA}
 	EndGlobalSection
 EndGlobal
