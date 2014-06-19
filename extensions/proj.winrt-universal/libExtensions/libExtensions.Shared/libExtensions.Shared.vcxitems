@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{4319c665-8acb-4386-a34d-c384b533dc5f}</ItemsProjectGuid>
+    <ItemsRootNamespace>libExtensions</ItemsRootNamespace>
+    <ItemsProjectName>libExtensions.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControl.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlButton.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlColourPicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlHuePicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlPotentiometer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSlider.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlStepper.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSwitch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlUtils.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCInvocation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCScale9Sprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCEditBox\CCEditBox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCScrollView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCTableView.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCTableViewCell.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\physics-nodes\CCPhysicsDebugNode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\physics-nodes\CCPhysicsSprite.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\cocos-ext.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ExtensionMacros.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlButton.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlColourPicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlExtensions.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlHuePicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlPotentiometer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSaturationBrightnessPicker.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSlider.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlStepper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlSwitch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCControlUtils.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCInvocation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCControlExtension\CCScale9Sprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCEditBox\CCEditBox.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCEditBox\CCEditBoxImpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCScrollView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCTableView.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\GUI\CCScrollView\CCTableViewCell.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\physics-nodes\CCPhysicsDebugNode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\physics-nodes\CCPhysicsSprite.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
+  </ItemGroup>
+</Project>
