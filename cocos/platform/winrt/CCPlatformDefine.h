@@ -41,6 +41,11 @@ THE SOFTWARE.
 
 #include <assert.h>
 
+#ifndef NOMINMAX
+#define NOMINMAX
+#endif
+
+
 #if CC_DISABLE_ASSERT > 0
 #define CC_ASSERT(cond)
 #else
