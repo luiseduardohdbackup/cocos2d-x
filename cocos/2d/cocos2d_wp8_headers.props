@@ -8,7 +8,7 @@
   <ItemDefinitionGroup>
     <ClCompile>
       <AdditionalIncludeDirectories>$(EngineRoot)cocos\platform\wp8;$(EngineRoot);$(EngineRoot)cocos;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos\editor-support;$(EngineRoot)external;$(EngineRoot)external\tinyxml2;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)extensions;$(EngineRoot)cocos\platform\winrt;$(EngineRoot)\external\winrt-specific\angle\include;$(EngineRoot)\external\curl\include\wp8;$(EngineRoot)\external\winrt-specific;$(EngineRoot)cocos\audio\include;$(EngineRoot)cocos;$(EngineRoot)external\chipmunk\include\chipmunk;$(EngineRoot)external;$(EngineRoot)cocos\editor-support;$(EngineRoot);$(EngineRoot)external\ConvertUTF;$(GeneratedFilesDir)</AdditionalIncludeDirectories>
-      <PreprocessorDefinitions>_VARIADIC_MAX=10;NOMINMAX;GL_GLEXT_PROTOTYPES;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <CompileAsWinRT>true</CompileAsWinRT>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
