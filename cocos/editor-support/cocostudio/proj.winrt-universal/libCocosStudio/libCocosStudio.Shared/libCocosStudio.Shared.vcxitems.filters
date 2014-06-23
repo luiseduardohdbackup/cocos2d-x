@@ -33,7 +33,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.cpp" />
@@ -79,6 +78,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.cpp">
       <Filter>WidgetReader\TextReader</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
@@ -115,7 +115,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoStudio.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.h" />
@@ -164,6 +163,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\WidgetReader\TextReader\TextReader.h">
       <Filter>WidgetReader\TextReader</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="WidgetReader">

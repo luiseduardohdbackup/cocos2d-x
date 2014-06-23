@@ -47,8 +47,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.cpp" />
@@ -102,9 +102,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTransformHelp.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCTween.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCUtilMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoStudio.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\DictionaryHelper.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ObjectFactory.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerBase.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerMng.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\TriggerObj.h" />
