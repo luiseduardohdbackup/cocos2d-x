@@ -22,6 +22,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 ****************************************************************************/
+#include "pch.h"
 #include "SimpleAudioEngine.h"
 #include "Audio.h"
 
@@ -60,11 +61,7 @@ SimpleAudioEngine::~SimpleAudioEngine()
 {
 }
 
-SimpleAudioEngine* SimpleAudioEngine::sharedEngine()
-{
-    static SimpleAudioEngine s_SharedEngine;
-    return &s_SharedEngine;
-}
+
 
 void SimpleAudioEngine::end()
 {
@@ -132,11 +129,11 @@ bool SimpleAudioEngine::isBackgroundMusicPlaying()
 // effect function
 //////////////////////////////////////////////////////////////////////////
 
-unsigned int SimpleAudioEngine::playEffect(const char* pszFilePath, bool bLoop)
+unsigned int SimpleAudioEngine::playEffect(const char* pszFilePath, bool bLoop, float pitch, float pan, float gain)
 {
     unsigned int sound;
     sharedAudioController()->PlaySoundEffect(pszFilePath, bLoop, sound);
-
+    // TODO: need to support playEffect parameters
     return sound;
 }
 
