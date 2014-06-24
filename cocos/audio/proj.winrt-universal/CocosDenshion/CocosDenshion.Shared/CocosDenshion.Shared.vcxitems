@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{ddd2cf0f-8613-4b80-891f-fe67131a0104}</ItemsProjectGuid>
+    <ItemsRootNamespace>CocosDenshion</ItemsRootNamespace>
+    <ItemsProjectName>CocosDenshion.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\winrt\Audio.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\winrt\MediaStreamer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\winrt\SimpleAudioEngine.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\winrt\Audio.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\winrt\MediaStreamer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
+  </ItemGroup>
+</Project>
