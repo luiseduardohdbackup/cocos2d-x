@@ -182,7 +182,7 @@ void MainPage::OnCompositionScaleChanged(SwapChainPanel^ sender, Object^ args)
 {
 	critical_section::scoped_lock lock(m_main->GetCriticalSection());
 	m_deviceResources->SetCompositionScale(sender->CompositionScaleX, sender->CompositionScaleY);
-	m_main->CreateWindowSizeDependentResources();
+	//m_main->CreateWindowSizeDependentResources();
 }
 
 void MainPage::OnSwapChainPanelSizeChanged(Object^ sender, SizeChangedEventArgs^ e)

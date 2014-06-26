@@ -329,8 +329,11 @@ void GLView::UpdateForWindowSizeChange(float width, float height)
 void GLView::UpdateWindowSize()
 {
     float width, height;
+    width = m_width;
+    height = m_height;
 
-    if(m_orientation == DisplayOrientations::Landscape || m_orientation == DisplayOrientations::LandscapeFlipped)
+#if 0
+    if (m_orientation == DisplayOrientations::Landscape || m_orientation == DisplayOrientations::LandscapeFlipped)
     {
         width = m_height;
         height = m_width;
@@ -340,6 +343,8 @@ void GLView::UpdateWindowSize()
         width = m_width;
         height = m_height;
     }
+
+#endif // 0
 
     UpdateOrientationMatrix();
 
@@ -436,6 +441,7 @@ Vec2 GLView::GetPoint(PointerEventArgs^ args)
 
 void GLView::setViewPortInPoints(float x , float y , float w , float h)
 {
+#if 0
     switch(m_orientation)
 	{
 		case DisplayOrientations::Landscape:
@@ -452,10 +458,17 @@ void GLView::setViewPortInPoints(float x , float y , float w , float h)
                        (GLsizei)(w * _scaleX),
                        (GLsizei)(h * _scaleY));
 	}
+#endif
+
+    glViewport((GLint) (x * _scaleX + _viewPortRect.origin.x),
+        (GLint) (y * _scaleY + _viewPortRect.origin.y),
+        (GLsizei) (w * _scaleX),
+        (GLsizei) (h * _scaleY));
 }
 
 void GLView::setScissorInPoints(float x , float y , float w , float h)
 {
+#if 0
     switch(m_orientation)
 	{
 		case DisplayOrientations::Landscape:
@@ -472,6 +485,11 @@ void GLView::setScissorInPoints(float x , float y , float w , float h)
                        (GLsizei)(w * _scaleX),
                        (GLsizei)(h * _scaleY));
 	}
+#endif
+    glScissor((GLint) (x * _scaleX + _viewPortRect.origin.x),
+        (GLint) (y * _scaleY + _viewPortRect.origin.y),
+        (GLsizei) (w * _scaleX),
+        (GLsizei) (h * _scaleY));
 }
 
 void GLView::QueueBackKeyPress()

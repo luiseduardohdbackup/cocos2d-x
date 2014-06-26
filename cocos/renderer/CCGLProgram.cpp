@@ -171,7 +171,7 @@ GLProgram::~GLProgram()
 bool GLProgram::initWithByteArrays(const GLchar* vShaderByteArray, const GLchar* fShaderByteArray)
 {
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
     GLboolean hasCompiler = false;
     glGetBooleanv(GL_SHADER_COMPILER, &hasCompiler);
     _hasShaderCompiler = (hasCompiler == GL_TRUE);
@@ -516,7 +516,7 @@ bool GLProgram::link()
 {
     CCASSERT(_program != 0, "Cannot link invalid program");
 
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT) || (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_WP8)
     if(!_hasShaderCompiler)
     {
         // precompiled shader program is already linked

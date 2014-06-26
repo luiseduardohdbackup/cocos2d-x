@@ -137,7 +137,6 @@ void Renderer::Render()
 
 #endif
         m_deviceResources->Present();
-
         m_deviceResources->releaseContext();
     }
 }
