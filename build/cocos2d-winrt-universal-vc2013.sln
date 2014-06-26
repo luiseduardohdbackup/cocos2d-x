@@ -83,8 +83,18 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CocosDenshion.Windows", "..
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CocosDenshion.WindowsPhone", "..\cocos\audio\proj.winrt-universal\CocosDenshion\CocosDenshion.WindowsPhone\CocosDenshion.WindowsPhone.vcxproj", "{8AE63C48-0FE6-4972-807C-9DCC85F15E83}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cpp-empty-test", "cpp-empty-test", "{546A9412-238F-4E88-996A-742A5F528079}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-empty-test.Shared", "..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems", "{10D89044-5728-4A52-9B0B-CEFEB15C809C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-empty-test.Windows", "..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Windows\cpp-empty-test.Windows.vcxproj", "{75C37B89-D8BF-41B1-8DFD-2A368371F258}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-empty-test.WindowsPhone", "..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.WindowsPhone\cpp-empty-test.WindowsPhone.vcxproj", "{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{75c37b89-d8bf-41b1-8dfd-2a368371f258}*SharedItemsImports = 4
+		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{10d89044-5728-4a52-9b0b-cefeb15c809c}*SharedItemsImports = 9
 		..\extensions\proj.winrt-universal\libExtensions\libExtensions.Shared\libExtensions.Shared.vcxitems*{b4868c69-c470-4ae0-b8ea-faa34db7d964}*SharedItemsImports = 4
 		..\cocos\2d\proj.winrt-universal\libcocos2d\libcocos2d.Shared\libcocos2d.Shared.vcxitems*{424f0c97-6b8d-409b-8dd9-a78f2ee89972}*SharedItemsImports = 4
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{c416026e-f95f-4ba3-bdd3-ad8bf76c600f}*SharedItemsImports = 4
@@ -111,6 +121,7 @@ Global
 		..\extensions\proj.winrt-universal\libExtensions\libExtensions.Shared\libExtensions.Shared.vcxitems*{fa033dc6-1489-4e95-bfa9-d49baa3583be}*SharedItemsImports = 4
 		..\cocos\storage\local-storage\proj.winrt-universal\libLocalStorage\libLocalStorage.Shared\libLocalStorage.Shared.vcxitems*{a6ef933c-e654-43ab-9b35-7a09909cfc43}*SharedItemsImports = 4
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{d9d4007f-e49c-4074-9abd-01702a694a8a}*SharedItemsImports = 4
+		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{f4dbdd4a-b8c1-4582-8f70-0ca09a6ca573}*SharedItemsImports = 4
 		..\cocos\2d\proj.winrt-universal\libcocos2d\libcocos2d.Shared\libcocos2d.Shared.vcxitems*{44905cf1-236e-4539-a5a4-30186c95477e}*SharedItemsImports = 9
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{4afb15ba-1f2b-4ef5-858c-3c36245ff18c}*SharedItemsImports = 9
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{8c051752-4ffc-45b8-865e-bb10bf824f69}*SharedItemsImports = 4
@@ -345,6 +356,38 @@ Global
 		{8AE63C48-0FE6-4972-807C-9DCC85F15E83}.Release|Win32.ActiveCfg = Release|Win32
 		{8AE63C48-0FE6-4972-807C-9DCC85F15E83}.Release|Win32.Build.0 = Release|Win32
 		{8AE63C48-0FE6-4972-807C-9DCC85F15E83}.Release|x64.ActiveCfg = Release|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|ARM.ActiveCfg = Debug|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|ARM.Build.0 = Debug|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|ARM.Deploy.0 = Debug|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|Win32.ActiveCfg = Debug|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|Win32.Build.0 = Debug|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|Win32.Deploy.0 = Debug|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|x64.ActiveCfg = Debug|x64
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|x64.Build.0 = Debug|x64
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Debug|x64.Deploy.0 = Debug|x64
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|ARM.ActiveCfg = Release|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|ARM.Build.0 = Release|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|ARM.Deploy.0 = Release|ARM
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|Win32.ActiveCfg = Release|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|Win32.Build.0 = Release|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|Win32.Deploy.0 = Release|Win32
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|x64.ActiveCfg = Release|x64
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|x64.Build.0 = Release|x64
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258}.Release|x64.Deploy.0 = Release|x64
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|ARM.ActiveCfg = Debug|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|ARM.Build.0 = Debug|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|ARM.Deploy.0 = Debug|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|Win32.Build.0 = Debug|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|Win32.Deploy.0 = Debug|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Debug|x64.ActiveCfg = Debug|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|ARM.ActiveCfg = Release|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|ARM.Build.0 = Release|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|ARM.Deploy.0 = Release|ARM
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|Win32.ActiveCfg = Release|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|Win32.Build.0 = Release|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|Win32.Deploy.0 = Release|Win32
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -380,5 +423,8 @@ Global
 		{DDD2CF0F-8613-4B80-891F-FE67131A0104} = {5D89BA63-1098-4BE9-B7DE-FD87D4BF4D2E}
 		{9D3A068B-0008-46AA-BEC3-92D9F9783EB3} = {5D89BA63-1098-4BE9-B7DE-FD87D4BF4D2E}
 		{8AE63C48-0FE6-4972-807C-9DCC85F15E83} = {5D89BA63-1098-4BE9-B7DE-FD87D4BF4D2E}
+		{10D89044-5728-4A52-9B0B-CEFEB15C809C} = {546A9412-238F-4E88-996A-742A5F528079}
+		{75C37B89-D8BF-41B1-8DFD-2A368371F258} = {546A9412-238F-4E88-996A-742A5F528079}
+		{F4DBDD4A-B8C1-4582-8F70-0CA09A6CA573} = {546A9412-238F-4E88-996A-742A5F528079}
 	EndGlobalSection
 EndGlobal

@@ -36,8 +36,6 @@ THE SOFTWARE.
 #include "GLES2/gl2.h"
 #include "GLES2/gl2ext.h"
 #include "winrtangle.h"
-#include "esUtil.h"
-#include "ccMacros.h"
 
 #ifndef GL_GLEXT_PROTOTYPES
 #define GL_GLEXT_PROTOTYPES

@@ -26,147 +26,146 @@ THE SOFTWARE.
 #ifndef __CC_EGLVIEW_WINRT_H__
 #define __CC_EGLVIEW_WINRT_H__
 
-#include "base/CCPlatformConfig.h"
-#if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-
 #include "CCStdC.h"
-#include "CCGL.h"
 #include "platform/CCCommon.h"
-#include "InputEvent.h"
 #include "platform/CCGLViewProtocol.h"
+#include "InputEvent.h"
+
+
 #include <agile.h>
 
 #include <wrl/client.h>
-
-#include <agile.h>
-#include <DirectXMath.h>
+#include <d3d11_1.h>
 #include <mutex>
 #include <queue>
 
+#include <agile.h>
+#include <DirectXMath.h>
+
+
+
 NS_CC_BEGIN
 
-class CCEGL;
 class GLView;
 
-ref class WinRTWindow sealed
-{
-
-public:
-    WinRTWindow(Windows::UI::Core::CoreWindow^ window);
-	void Initialize(Windows::UI::Core::CoreWindow^ window, Windows::UI::Xaml::Controls::SwapChainBackgroundPanel^ panel);
-	void setIMEKeyboardState(bool bOpen);
-    void swapBuffers();
-
-
-private:
-	cocos2d::Vec2 GetCCPoint(Windows::UI::Core::PointerEventArgs^ args);
-
-	void OnTextKeyDown(Object^ sender, Windows::UI::Xaml::Input::KeyRoutedEventArgs^ e); 
-	void OnTextKeyUp(Object^ sender, Windows::UI::Xaml::Input::KeyRoutedEventArgs^ e); 
-
-	void OnPointerWheelChanged(Windows::UI::Core::CoreWindow^, Windows::UI::Core::PointerEventArgs^ args);
-	void OnPointerMoved(Windows::UI::Core::CoreWindow^, Windows::UI::Core::PointerEventArgs^ args);
-	void OnPointerPressed(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::PointerEventArgs^ args);
-	void OnPointerReleased(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::PointerEventArgs^ args);
-	void OnWindowSizeChanged(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::WindowSizeChangedEventArgs^ args);
-	void OnLogicalDpiChanged(Platform::Object^ sender);
-	void OnOrientationChanged(Platform::Object^ sender);
-	void OnDisplayContentsInvalidated(Platform::Object^ sender);
-    void OnRendering(Platform::Object^ sender, Platform::Object^ args);
-    void OnSuspending();
-    void ResizeWindow();
-    
-
-	void ShowKeyboard(Windows::UI::ViewManagement::InputPane^ inputPane, Windows::UI::ViewManagement::InputPaneVisibilityEventArgs^ args);
-	void HideKeyboard(Windows::UI::ViewManagement::InputPane^ inputPane, Windows::UI::ViewManagement::InputPaneVisibilityEventArgs^ args);
-
-	Platform::Agile<Windows::UI::Core::CoreWindow> m_window;
-
-	Windows::Foundation::Point m_lastPoint;
-	Windows::Foundation::EventRegistrationToken m_eventToken;
-	bool m_lastPointValid;
-	bool m_textInputEnabled;
-	Microsoft::WRL::ComPtr<IWinrtEglWindow> m_eglWindow;
-	Windows::UI::Xaml::Controls::TextBox^ m_textBox;
-	Windows::UI::Xaml::Controls::Button^ m_dummy;
-
-    ESContext m_esContext;
-
-
-    friend GLView;
-};
 
 class CC_DLL GLView : public Ref, public GLViewProtocol
 {
 public:
-    GLView();
-    virtual ~GLView();
+    static GLView* create(const std::string& viewName);
 
     /* override functions */
     virtual bool isOpenGLReady();
     virtual void end();
     virtual void swapBuffers();
-    virtual void setFrameSize(float width, float height);
+    virtual void setViewPortInPoints(float x , float y , float w , float h);
+    virtual void setScissorInPoints(float x , float y , float w , float h);
+    const Mat4& getOrientationMatrix() const;
+    const Mat4& getReverseOrientationMatrix () const {return m_reverseOrientationMatrix;};
+
+    Windows::Graphics::Display::DisplayOrientations getDeviceOrientation() {return m_orientation;};
+
     virtual void setIMEKeyboardState(bool bOpen);
 	void ShowKeyboard(Windows::Foundation::Rect r);
 	void HideKeyboard(Windows::Foundation::Rect r);
-    virtual bool Create(Windows::UI::Core::CoreWindow^ window, Windows::UI::Xaml::Controls::SwapChainBackgroundPanel^ panel);
-	void UpdateForWindowSizeChange();
-	void OnRendering();
-    void OnSuspending();
-    void GLView::QueueEvent(std::shared_ptr<InputEvent>& event);
 
-    void OnPointerPressed(Windows::UI::Core::PointerEventArgs^ args);
-    void OnPointerMoved(Windows::UI::Core::PointerEventArgs^ args);
-    void OnPointerReleased(Windows::UI::Core::PointerEventArgs^ args);
-    void OnPointerPressed(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::PointerEventArgs^ args);
+    // WP8 XAML app
+    virtual bool Create(float width, float height ,Windows::Graphics::Display::DisplayOrientations orientation);
+
+	void OnPointerPressed(Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerMoved(Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerReleased(Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerPressed(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerWheelChanged(Windows::UI::Core::CoreWindow^, Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerMoved(Windows::UI::Core::CoreWindow^, Windows::UI::Core::PointerEventArgs^ args);
+	void OnPointerReleased(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::PointerEventArgs^ args);
+	void OnVisibilityChanged(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::VisibilityChangedEventArgs^ args);
+	void OnWindowClosed(Windows::UI::Core::CoreWindow^ sender, Windows::UI::Core::CoreWindowEventArgs^ args);
+	void OnResuming(Platform::Object^ sender, Platform::Object^ args);
+	void OnSuspending(Platform::Object^ sender, Windows::ApplicationModel::SuspendingEventArgs^ args);
     void OnBackKeyPress();
 
+    void QueueBackKeyPress();
+    void QueuePointerEvent(PointerEventType type, Windows::UI::Core::PointerEventArgs^ args);
+    void GLView::QueueEvent(std::shared_ptr<InputEvent>& event);
 
-private:
-	Windows::Foundation::EventRegistrationToken m_eventToken;
-	Windows::Foundation::Point m_lastPoint;
-	bool m_lastPointValid;
+    bool ShowMessageBox(Platform::String^ title, Platform::String^ message);
 
-public:
-
-    // winrt platform functions
-	Windows::UI::Core::CoreWindow^ getWindow() { return m_window.Get(); };
-	
 	int Run();
+	void Render();
 
     void resize(int width, int height);
-    /* 
-     * Set zoom factor for frame. This method is for debugging big resolution (e.g.new ipad) app on desktop.
-     */
-    void setFrameZoomFactor(float fZoomFactor);
+
 	float getFrameZoomFactor();
     void centerWindow();
 
-    
+ 	void UpdateOrientation(Windows::Graphics::Display::DisplayOrientations orientation);
+ 	void UpdateForWindowSizeChange(float width, float height);
+   
     // static function
     /**
     @brief    get the shared main open gl window
     */
 	static GLView* sharedOpenGLView();
 
+    void ProcessEvents();
+    void AddPointerEvent(PointerEventType type, Windows::UI::Core::PointerEventArgs^ args);
+
+
+
 protected:
+    GLView();
+    virtual ~GLView();
+
+    bool initWithRect(const std::string& viewName, Rect rect, float frameZoomFactor);
+    bool initWithFullScreen(const std::string& viewName);
+
+    /*
+     * Set zoom factor for frame. This method is for debugging big resolution (e.g.new ipad) app on desktop.
+     */
+    void setFrameZoomFactor(float zoomFactor);
+
+    inline bool isRetina() { return _isRetina; };
+
+    float _frameZoomFactor;
+    bool _supportTouch;
+    bool _isRetina;
+
 
 private:
-    Platform::Agile<Windows::UI::Core::CoreWindow> m_window;
-	bool m_running;
-	bool m_initialized;
-    bool m_bSupportTouch;
-    float m_fFrameZoomFactor;
-	WinRTWindow^ m_winRTWindow;
+    CC_DISALLOW_COPY_AND_ASSIGN(GLView);
+
+	void OnRendering();
+	void UpdateWindowSize();
+    void UpdateOrientationMatrix();
+
+    cocos2d::Vec2 TransformToOrientation(Windows::Foundation::Point point);
+ 	cocos2d::Vec2  GetPoint(Windows::UI::Core::PointerEventArgs^ args);
+       
+    Windows::Foundation::Rect m_windowBounds;
+	Windows::Foundation::EventRegistrationToken m_eventToken;
+	Windows::Foundation::Point m_lastPoint;
+
+    float m_width;
+    float m_height;
+
+    Windows::Graphics::Display::DisplayOrientations m_orientation;
 	Windows::Foundation::Rect m_keyboardRect;
+
+	bool m_lastPointValid;
+	bool m_windowClosed;
+	bool m_windowVisible;
+    Mat4 m_orientationMatrix;
+    Mat4 m_reverseOrientationMatrix;
+
+    bool m_running;
+	bool m_initialized;
 
     std::queue<std::shared_ptr<InputEvent>> mInputEvents;
     std::mutex mMutex;
+
 };
 
 NS_CC_END
-
-#endif // (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
 
 #endif    // end of __CC_EGLVIEW_WINRT_H__

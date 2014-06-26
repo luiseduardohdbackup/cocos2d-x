@@ -55,23 +55,23 @@
   <Import Project="..\libGUI.Shared\libGUI.Shared.vcxitems" Label="Shared" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\2d\cocos2d_wp8_headers.props" />
     <Import Project="..\..\..\..\2d\cocos2d_winrt.props" />
+    <Import Project="..\..\..\..\2d\cocos2d_winrt_headers.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\2d\cocos2d_wp8_headers.props" />
     <Import Project="..\..\..\..\2d\cocos2d_winrt.props" />
+    <Import Project="..\..\..\..\2d\cocos2d_winrt_headers.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\2d\cocos2d_wp8_headers.props" />
     <Import Project="..\..\..\..\2d\cocos2d_winrt.props" />
+    <Import Project="..\..\..\..\2d\cocos2d_winrt_headers.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="..\..\..\..\2d\cocos2d_wp8_headers.props" />
     <Import Project="..\..\..\..\2d\cocos2d_winrt.props" />
+    <Import Project="..\..\..\..\2d\cocos2d_winrt_headers.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
