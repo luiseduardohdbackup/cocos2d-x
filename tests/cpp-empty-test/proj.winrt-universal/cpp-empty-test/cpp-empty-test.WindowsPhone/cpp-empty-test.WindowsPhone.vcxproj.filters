@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>$guid1$</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Assets">
+      <UniqueIdentifier>$guid2$</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Filter Include="Content">
+      <UniqueIdentifier>$guid3$</UniqueIdentifier>
+    </Filter>
+    <Filter Include="arm-dlls">
+      <UniqueIdentifier>{05094274-cb9a-4984-83cd-f974f57d81e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32-dlls">
+      <UniqueIdentifier>{a53fde7b-e5f0-48ee-b55f-d104e247ef24}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Logo.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\Square71x71Logo.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\WideLogo.scale-240.png">
+      <Filter>Assets</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\win32\libEGL.dll">
+      <Filter>win32-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\win32\libGLESv2.dll">
+      <Filter>win32-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\arm\libEGL.dll">
+      <Filter>arm-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\arm\libGLESv2.dll">
+      <Filter>arm-dlls</Filter>
+    </None>
+  </ItemGroup>
+</Project>
