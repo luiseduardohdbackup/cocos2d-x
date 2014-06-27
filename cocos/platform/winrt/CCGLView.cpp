@@ -171,11 +171,6 @@ void GLView::OnBackKeyPress()
 
 }
 
-void GLView::OnPointerPressed(CoreWindow^ sender, PointerEventArgs^ args)
-{
-    OnPointerPressed(args);
-}
-
 void GLView::OnPointerPressed(PointerEventArgs^ args)
 {
     int id = args->CurrentPoint->PointerId;
@@ -184,7 +179,7 @@ void GLView::OnPointerPressed(PointerEventArgs^ args)
 }
 
 
-void GLView::OnPointerWheelChanged(CoreWindow^ sender, PointerEventArgs^ args)
+void GLView::OnPointerWheelChanged(PointerEventArgs^ args)
 {
     float direction = (float)args->CurrentPoint->Properties->MouseWheelDelta;
     int id = 0;
@@ -195,20 +190,16 @@ void GLView::OnPointerWheelChanged(CoreWindow^ sender, PointerEventArgs^ args)
     handleTouchesEnd(1, &id, &p.x, &p.y);
 }
 
-void GLView::OnVisibilityChanged(CoreWindow^ sender, VisibilityChangedEventArgs^ args)
+void GLView::OnVisibilityChanged(VisibilityChangedEventArgs^ args)
 {
 	m_windowVisible = args->Visible;
 }
 
-void GLView::OnWindowClosed(CoreWindow^ sender, CoreWindowEventArgs^ args)
+void GLView::OnWindowClosed(CoreWindowEventArgs^ args)
 {
 	m_windowClosed = true;
 }
 
-void GLView::OnPointerMoved(CoreWindow^ sender, PointerEventArgs^ args)
-{
-    OnPointerMoved(args);   
-}
 
 void GLView::OnPointerMoved( PointerEventArgs^ args)
 {
@@ -228,11 +219,6 @@ void GLView::OnPointerMoved( PointerEventArgs^ args)
 	{
 		m_lastPointValid = false;
 	}
-}
-
-void GLView::OnPointerReleased(CoreWindow^ sender, PointerEventArgs^ args)
-{
-    OnPointerReleased(args);
 }
 
 void GLView::OnPointerReleased(PointerEventArgs^ args)
@@ -295,13 +281,13 @@ void GLView::OnRendering()
 
 bool GLView::ShowMessageBox(Platform::String^ title, Platform::String^ message)
 {
-#if 0
-    if (m_messageBoxDelegate)
-    {
-        m_messageBoxDelegate->Invoke(title, message);
-        return true;
-    }
-#endif // 0
+
+    Windows::UI::Popups::MessageDialog^ msg = ref new Windows::UI::Popups::MessageDialog(message, title);
+    // Set the command to be invoked when a user presses 'ESC'
+    msg->CancelCommandIndex = 1;
+
+    // Show the message dialog
+    msg->ShowAsync();
 
     return false;
 }
@@ -405,6 +391,9 @@ cocos2d::Vec2 GLView::TransformToOrientation(Windows::Foundation::Point p)
     float x = p.X;
     float y = p.Y;  
 
+    returnValue = Vec2(x, y);
+
+#if 0
     switch (m_orientation)
     {
         case DisplayOrientations::Portrait:
@@ -421,6 +410,7 @@ cocos2d::Vec2 GLView::TransformToOrientation(Windows::Foundation::Point p)
             returnValue = Vec2(m_height - y, x);
             break;
     }
+#endif
 
 	float zoomFactor = GLView::sharedOpenGLView()->getFrameZoomFactor();
 	if(zoomFactor > 0.0f) {

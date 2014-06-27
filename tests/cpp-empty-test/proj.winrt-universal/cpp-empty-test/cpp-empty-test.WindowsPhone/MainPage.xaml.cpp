@@ -31,6 +31,11 @@ MainPage::MainPage() :
 {
 	InitializeComponent();
 
+    // Hide the Status bar
+    Windows::UI::ViewManagement::StatusBar::GetForCurrentView()->HideAsync();
+    Application::Current->DebugSettings->EnableFrameRateCounter = false;
+
+
 	// Register event handlers for page lifecycle.
 	CoreWindow^ window = Window::Current->CoreWindow;
 

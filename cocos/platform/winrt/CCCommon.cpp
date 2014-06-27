@@ -30,9 +30,10 @@ THE SOFTWARE.
 #include "platform/wp8/CCGLView.h"
 #endif
 
-#if defined(VLD_DEBUG_MEMORY)
-#include <vld.h>
-#endif
+using namespace Windows::UI::Popups;
+using namespace Windows::UI::Xaml;
+using namespace Windows::UI::Xaml::Controls;
+using namespace Windows::UI::Xaml::Navigation;
 
 NS_CC_BEGIN
 
@@ -42,10 +43,27 @@ void MessageBox(const char * pszMsg, const char * pszTitle)
     // Create the message dialog and set its content
     Platform::String^ message = ref new Platform::String(CCUtf8ToUnicode(pszMsg, -1).c_str());
     Platform::String^ title = ref new Platform::String(CCUtf8ToUnicode(pszTitle, -1).c_str());
+
+
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WINRT)
-	Windows::UI::Popups::MessageDialog^ msg = ref new Windows::UI::Popups::MessageDialog(message, title);
-    // Set the command to be invoked when a user presses 'ESC'
-    msg->CancelCommandIndex = 1;
+    // Create the message dialog and set its content
+    MessageDialog^ msg = ref new MessageDialog(message);
+
+#if 0
+    UICommand^ upgradeCommand = ref new UICommand(
+        "Close",
+        ref new UICommandInvokedHandler(this, &CancelCommand::CommandInvokedHandler));
+
+    // Add the commands to the dialog
+    msg->Commands->Append(upgradeCommand);
+
+
+    // Set the command that will be invoked by default
+    msg->DefaultCommandIndex = 0;
+
+    // Set the command to be invoked when escape is pressed
+    msg->CancelCommandIndex = 0;
+#endif // 0
 
     // Show the message dialog
     msg->ShowAsync();

@@ -23,39 +23,23 @@ Renderer::Renderer(const std::shared_ptr<AngleApp::DeviceResources>& deviceResou
     , m_deviceResources(deviceResources)
 {
     mApp = new AppDelegate();
-    CreateDeviceDependentResources();
 }
 
 // Initializes view parameters when the window size changes.
 void Renderer::CreateWindowSizeDependentResources()
 {
-    m_deviceResources->aquireContext();
-    auto outputSize = m_deviceResources->GetOutputSize();
-    auto logicalSize = m_deviceResources->GetLogicalSize();
-    auto director = cocos2d::Director::getInstance();
-
-
     if (!m_setupComplete)
     {
-        GLView* glview = GLView::create("Test Cpp");
-        glview->Create(logicalSize.Width, logicalSize.Height, m_deviceResources->GetCurrentOrientation());
-        director->setOpenGLView(glview);
-        CCApplication::getInstance()->run();
+        CreateDeviceDependentResources();
     }
     else
     {
-        cocos2d::GL::invalidateStateCache();
-        cocos2d::ShaderCache::getInstance()->reloadDefaultGLPrograms();
-        cocos2d::DrawPrimitives::init();
-        cocos2d::VolatileTextureMgr::reloadAllTextures();
-        cocos2d::EventCustom foregroundEvent(EVENT_COME_TO_FOREGROUND);
-        director->getEventDispatcher()->dispatchEvent(&foregroundEvent);
-        cocos2d::Application::getInstance()->applicationWillEnterForeground();
-        director->setGLDefaultValues();
+        m_deviceResources->aquireContext();
+        GLView* glview = GLView::sharedOpenGLView();
+        auto logicalSize = m_deviceResources->GetLogicalSize();
+        glview->UpdateForWindowSizeChange(logicalSize.Width, logicalSize.Height);
+        m_deviceResources->releaseContext();
     }
-    m_setupComplete = true;
-    m_deviceResources->releaseContext();
-
 }
 
 // Called once per frame, rotates the cube and calculates the model and view matrices.
@@ -66,17 +50,20 @@ void Renderer::Update(AngleApp::StepTimer const& timer)
 
 void Renderer::OnPointerPressed(PointerEventArgs^ e)
 {
-    //window->OnPointerPressed(e);
+    GLView* glview = GLView::sharedOpenGLView();
+    glview->OnPointerPressed(e);
 }
 
 void Renderer::OnPointerMoved(PointerEventArgs^ e)
 {
-    //window->OnPointerMoved(e);
+    GLView* glview = GLView::sharedOpenGLView();
+    glview->OnPointerMoved(e);
 }
 
 void Renderer::OnPointerReleased(PointerEventArgs^ e)
 {
-    //window->OnPointerReleased(e);
+    GLView* glview = GLView::sharedOpenGLView();
+    glview->OnPointerReleased(e);
 }
 
 void Renderer::OnKeyPressed(Windows::UI::Core::KeyEventArgs^ e)
@@ -88,8 +75,6 @@ void Renderer::OnKeyReleased(Windows::UI::Core::KeyEventArgs^ e)
 {
 	//window->OnKeyReleased(e);
 }
-
-
 
 void Renderer::AddPointerEvent(PointerEventType type, PointerEventArgs^ args)
 {
@@ -104,8 +89,6 @@ void Renderer::AddKeyboardEvent(KeyboardEventType type, Windows::UI::Core::KeyEv
 	std::shared_ptr<KeyboardEvent> e(new KeyboardEvent(type, args));
 	mInputEvents.push(e);
 }
-
-
 
 void Renderer::ProcessEvents()
 {
@@ -143,7 +126,31 @@ void Renderer::Render()
 
 void Renderer::CreateDeviceDependentResources()
 {
+    m_deviceResources->aquireContext();
+    auto outputSize = m_deviceResources->GetOutputSize();
+    auto logicalSize = m_deviceResources->GetLogicalSize();
+    auto director = cocos2d::Director::getInstance();
 
+    if (!m_setupComplete)
+    {
+        GLView* glview = GLView::create("Test Cpp");
+        glview->Create(logicalSize.Width, logicalSize.Height, m_deviceResources->GetCurrentOrientation());
+        director->setOpenGLView(glview);
+        CCApplication::getInstance()->run();
+    }
+    else
+    {
+        cocos2d::GL::invalidateStateCache();
+        cocos2d::ShaderCache::getInstance()->reloadDefaultGLPrograms();
+        cocos2d::DrawPrimitives::init();
+        cocos2d::VolatileTextureMgr::reloadAllTextures();
+        cocos2d::EventCustom foregroundEvent(EVENT_COME_TO_FOREGROUND);
+        director->getEventDispatcher()->dispatchEvent(&foregroundEvent);
+        cocos2d::Application::getInstance()->applicationWillEnterForeground();
+        director->setGLDefaultValues();
+    }
+    m_setupComplete = true;
+    m_deviceResources->releaseContext();
 }
 
 void Renderer::ReleaseDeviceDependentResources()
