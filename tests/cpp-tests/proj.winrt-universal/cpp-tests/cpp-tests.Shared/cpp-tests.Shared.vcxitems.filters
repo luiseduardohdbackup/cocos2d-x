@@ -614,6 +614,120 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager_Editor.h">
       <Filter>Classes\UITest\CocoStudioGUITest</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomTest\CustomImageTest\CustomImageTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomTest\CustomImageTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomTest\CustomParticleWidgetTest\CustomParticleWidgetTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomTest\CustomParticleWidgetTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomImageView.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomImageViewReader.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomParticleWidget.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomParticleWidgetReader.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomReader.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIButtonTest\UIButtonTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIButtonTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIButtonTest\UIButtonTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIButtonTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UICheckBoxTest\UICheckBoxTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UICheckBoxTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UICheckBoxTest\UICheckBoxTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UICheckBoxTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIFocusTest\UIFocusTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIFocusTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIImageViewTest\UIImageViewTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIImageViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIImageViewTest\UIImageViewTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIImageViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILayoutTest\UILayoutTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILayoutTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILayoutTest\UILayoutTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILayoutTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIListViewTest\UIListViewTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIListViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIListViewTest\UIListViewTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIListViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILoadingBarTest\UILoadingBarTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILoadingBarTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILoadingBarTest\UILoadingBarTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILoadingBarTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIPageViewTest\UIPageViewTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIPageViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIPageViewTest\UIPageViewTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIPageViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIRichTextTest\UIRichTextTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIRichTextTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScrollViewTest\UIScrollViewTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIScrollViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScrollViewTest\UIScrollViewTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIScrollViewTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISliderTest\UISliderTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UISliderTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISliderTest\UISliderTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UISliderTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextAtlasTest\UITextAtlasTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextAtlasTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextAtlasTest\UITextAtlasTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextAtlasTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextBMFontTest\UITextBMFontTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextBMFontTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextBMFontTest\UITextBMFontTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextBMFontTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextFieldTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextFieldTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.cpp">
@@ -1019,6 +1133,120 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager_Editor.cpp">
       <Filter>Classes\UITest\CocoStudioGUITest</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomTest\CustomImageTest\CustomImageTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomTest\CustomImageTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomTest\CustomParticleWidgetTest\CustomParticleWidgetTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomTest\CustomParticleWidgetTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomImageView.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomImageViewReader.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomParticleWidget.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomParticleWidgetReader.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomWidget\CustomReader.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\CustomWidget</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIButtonTest\UIButtonTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIButtonTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIButtonTest\UIButtonTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIButtonTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UICheckBoxTest\UICheckBoxTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UICheckBoxTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UICheckBoxTest\UICheckBoxTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UICheckBoxTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIFocusTest\UIFocusTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIFocusTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIImageViewTest\UIImageViewTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIImageViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIImageViewTest\UIImageViewTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIImageViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILayoutTest\UILayoutTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILayoutTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILayoutTest\UILayoutTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILayoutTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIListViewTest\UIListViewTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIListViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIListViewTest\UIListViewTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIListViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILoadingBarTest\UILoadingBarTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILoadingBarTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UILoadingBarTest\UILoadingBarTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UILoadingBarTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIPageViewTest\UIPageViewTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIPageViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIPageViewTest\UIPageViewTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIPageViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIRichTextTest\UIRichTextTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIRichTextTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScrollViewTest\UIScrollViewTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIScrollViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScrollViewTest\UIScrollViewTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIScrollViewTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISliderTest\UISliderTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UISliderTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISliderTest\UISliderTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UISliderTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextAtlasTest\UITextAtlasTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextAtlasTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextAtlasTest\UITextAtlasTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextAtlasTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextBMFontTest\UITextBMFontTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextBMFontTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextBMFontTest\UITextBMFontTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextBMFontTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextFieldTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextFieldTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">
@@ -1344,6 +1572,12 @@
     </Filter>
     <Filter Include="Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest">
       <UniqueIdentifier>{f9f1e0a3-e973-42ca-846b-40b955ed767f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\CustomTest\CustomImageTest">
+      <UniqueIdentifier>{0125ff05-7bde-4e6a-9e53-37f06ee8f139}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\CustomTest\CustomParticleWidgetTest">
+      <UniqueIdentifier>{6c5f154f-1133-4574-b05d-194d3728f042}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
