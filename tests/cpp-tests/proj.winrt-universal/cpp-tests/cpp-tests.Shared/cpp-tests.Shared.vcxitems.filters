@@ -266,12 +266,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConfigurationTest\ConfigurationTest.h">
       <Filter>Classes\ConfigurationTest</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConsoleTest\ConsoleTest.h">
-      <Filter>Classes\ConsoleTest</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurlTest\CurlTest.h">
-      <Filter>Classes\CurlTest</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurrentLanguageTest\CurrentLanguageTest.h">
       <Filter>Classes\CurrentLanguageTest</Filter>
     </ClInclude>
@@ -412,18 +406,6 @@
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest\CCControlSwitchTest.h">
       <Filter>Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\EditBoxTest\EditBoxTest.h">
-      <Filter>Classes\ExtensionsTest\EditBoxTest</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\HttpClientTest.h">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\SocketIOTest.h">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
-    </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\WebSocketTest.h">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.h">
       <Filter>Classes\ExtensionsTest\TableViewTest</Filter>
@@ -719,9 +701,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.h">
       <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
     </ClInclude>
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.h">
-      <Filter>Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest</Filter>
-    </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.h">
       <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>
     </ClInclude>
@@ -848,12 +827,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConfigurationTest\ConfigurationTest.cpp">
       <Filter>Classes\ConfigurationTest</Filter>
     </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConsoleTest\ConsoleTest.cpp">
-      <Filter>Classes\ConsoleTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurlTest\CurlTest.cpp">
-      <Filter>Classes\CurlTest</Filter>
-    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurrentLanguageTest\CurrentLanguageTest.cpp">
       <Filter>Classes\CurrentLanguageTest</Filter>
     </ClCompile>
@@ -949,18 +922,6 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest\CCControlSwitchTest.cpp">
       <Filter>Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\EditBoxTest\EditBoxTest.cpp">
-      <Filter>Classes\ExtensionsTest\EditBoxTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\HttpClientTest.cpp">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\SocketIOTest.cpp">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\WebSocketTest.cpp">
-      <Filter>Classes\ExtensionsTest\NetworkTest</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.cpp">
       <Filter>Classes\ExtensionsTest\TableViewTest</Filter>
@@ -1249,9 +1210,6 @@
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.cpp">
       <Filter>Classes\UITest\CocoStudioGUITest\UITextTest</Filter>
-    </ClCompile>
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.cpp">
-      <Filter>Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.cpp">
       <Filter>Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest</Filter>

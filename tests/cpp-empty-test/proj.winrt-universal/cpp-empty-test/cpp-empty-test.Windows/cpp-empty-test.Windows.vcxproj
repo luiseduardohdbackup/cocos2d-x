@@ -259,6 +259,9 @@
     <ProjectReference Include="..\..\..\..\..\cocos\audio\proj.winrt-universal\CocosDenshion\CocosDenshion.Windows\CocosDenshion.Windows.vcxproj">
       <Project>{9d3a068b-0008-46aa-bec3-92d9f9783eb3}</Project>
     </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Windows\libCocosBuilder.Windows.vcxproj">
+      <Project>{e544493c-38a2-49d9-aa92-c5587a6b3474}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Windows\libCocosStudio.Windows.vcxproj">
       <Project>{0c4dfc12-dd2b-4a29-b6f4-fe6015524e24}</Project>
     </ProjectReference>

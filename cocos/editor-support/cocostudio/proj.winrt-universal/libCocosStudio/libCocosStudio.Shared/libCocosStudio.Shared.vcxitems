@@ -17,6 +17,11 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimeline.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimelineCache.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCFrame.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCNodeReader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimeLine.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.cpp" />
@@ -71,6 +76,12 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimeline.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimelineCache.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCFrame.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCNodeReader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimeLine.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimelineMacro.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrame.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionFrameEasing.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CCActionManagerEx.h" />

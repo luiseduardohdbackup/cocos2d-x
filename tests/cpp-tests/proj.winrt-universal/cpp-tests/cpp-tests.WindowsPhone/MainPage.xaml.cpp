@@ -6,7 +6,7 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 
-using namespace cpp_empty_test;
+using namespace cpp_tests;
 
 using namespace AngleApp;
 using namespace Platform;
@@ -158,17 +158,17 @@ void MainPage::OnDisplayContentsInvalidated(DisplayInformation^ sender, Object^ 
 
 void MainPage::OnPointerPressed(Object^ sender, PointerEventArgs^ e)
 {
-
+    m_main->OnPointerPressed(e);
 }
 
 void MainPage::OnPointerMoved(Object^ sender, PointerEventArgs^ e)
 {
-
+    m_main->OnPointerMoved(e);
 }
 
 void MainPage::OnPointerReleased(Object^ sender, PointerEventArgs^ e)
 {
-
+    m_main->OnPointerReleased(e);
 }
 
 void MainPage::OnCompositionScaleChanged(SwapChainPanel^ sender, Object^ args)

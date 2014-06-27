@@ -46,9 +46,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ClippingNodeTest\ClippingNodeTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CocosDenshionTest\CocosDenshionTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConfigurationTest\ConfigurationTest.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConsoleTest\ConsoleTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurlTest\CurlTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurrentLanguageTest\CurrentLanguageTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\DataVisitorTest\DataVisitorTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\DrawPrimitivesTest\DrawPrimitivesTest.cpp" />
@@ -80,11 +78,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSliderTest\CCControlSliderTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlStepperTest\CCControlStepperTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest\CCControlSwitchTest.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\EditBoxTest\EditBoxTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ExtensionsTest.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\HttpClientTest.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\SocketIOTest.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\WebSocketTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NotificationCenterTest\NotificationCenterTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\Scale9SpriteTest\Scale9SpriteTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.cpp" />
@@ -181,7 +175,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest_Editor.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest_Editor.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\UITest.cpp" />
@@ -276,9 +269,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ClippingNodeTest\ClippingNodeTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CocosDenshionTest\CocosDenshionTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConfigurationTest\ConfigurationTest.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ConsoleTest\ConsoleTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurlTest\CurlTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\CurrentLanguageTest\CurrentLanguageTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\DataVisitorTest\DataVisitorTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\DrawPrimitivesTest\DrawPrimitivesTest.h" />
@@ -325,11 +316,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSliderTest\CCControlSliderTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlStepperTest\CCControlStepperTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest\CCControlSwitchTest.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\EditBoxTest\EditBoxTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\ExtensionsTest.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\HttpClientTest.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\SocketIOTest.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NetworkTest\WebSocketTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\NotificationCenterTest\NotificationCenterTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\Scale9SpriteTest\Scale9SpriteTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\ExtensionsTest\TableViewTest\CustomTableViewCell.h" />
@@ -430,7 +417,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextFieldTest\UITextFieldTest_Editor.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UITextTest\UITextTest_Editor.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest\UIVideoPlayerTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest\UIWidgetAddNodeTest_Editor.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\UITest.h" />

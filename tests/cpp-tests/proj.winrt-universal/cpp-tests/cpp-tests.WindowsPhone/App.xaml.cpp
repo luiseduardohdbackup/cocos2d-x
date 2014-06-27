@@ -7,7 +7,7 @@
 #include "App.xaml.h"
 #include "MainPage.xaml.h"
 
-using namespace cpp_empty_test;
+using namespace cpp_tests;
 
 using namespace Platform;
 using namespace Windows::ApplicationModel;

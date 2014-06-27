@@ -8,7 +8,7 @@
 #include "App.g.h"
 #include "MainPage.xaml.h"
 
-namespace cpp_empty_test
+namespace cpp_tests
 {
 		/// <summary>
 	/// Provides application-specific behavior to supplement the default Application class.

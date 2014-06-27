@@ -6,7 +6,7 @@
 #include "pch.h"
 #include "MainPage.xaml.h"
 
-using namespace cpp_empty_test;
+using namespace cpp_tests;
 
 using namespace AngleApp;
 using namespace Platform;

@@ -79,6 +79,21 @@
       <Filter>WidgetReader\TextReader</Filter>
     </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimeline.cpp">
+      <Filter>ActionTimeline</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimelineCache.cpp">
+      <Filter>ActionTimeline</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCFrame.cpp">
+      <Filter>ActionTimeline</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCNodeReader.cpp">
+      <Filter>ActionTimeline</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimeLine.cpp">
+      <Filter>ActionTimeline</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\pch.h" />
@@ -164,6 +179,24 @@
       <Filter>WidgetReader\TextReader</Filter>
     </ClInclude>
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\CocoLoader.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimeline.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCActionTimelineCache.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCFrame.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCNodeReader.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimeLine.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\ActionTimeline\CCTimelineMacro.h">
+      <Filter>ActionTimeline</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="WidgetReader">
@@ -207,6 +240,9 @@
     </Filter>
     <Filter Include="WidgetReader\TextReader">
       <UniqueIdentifier>{1135a836-cd79-4254-9a48-a94ef1116080}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActionTimeline">
+      <UniqueIdentifier>{6628e820-7e91-41e2-b426-6e47f8a10e99}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

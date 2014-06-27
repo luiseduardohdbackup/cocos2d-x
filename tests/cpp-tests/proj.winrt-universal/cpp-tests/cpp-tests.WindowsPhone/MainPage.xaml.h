@@ -10,7 +10,7 @@
 #include "DeviceResources.h"
 #include "AppMain.h"
 
-namespace cpp_empty_test
+namespace cpp_tests
 {
     public ref class MainPage sealed
 	{

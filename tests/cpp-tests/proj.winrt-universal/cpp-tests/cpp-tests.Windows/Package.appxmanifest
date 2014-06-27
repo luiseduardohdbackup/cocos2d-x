@@ -25,7 +25,7 @@
         Executable="$targetnametoken$.exe"
         EntryPoint="cpp_empty_test_Windows.App">
         <VisualElements
-            DisplayName="cpp-empty-test.Windows"
+            DisplayName="cpp_tests.Windows"
             Logo="Assets\Logo.png"
             SmallLogo="Assets\SmallLogo.png"
             Description="cpp-empty-test.Windows"
