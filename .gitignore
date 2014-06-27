@@ -33,6 +33,8 @@ obj/
 _ReSharper*/
 [Tt]est[Rr]esult*
 ipch/
+Generated Files/
+Debug_Win32/
 *.opensdf
 
 # Ignore files build by ndk and eclipse
