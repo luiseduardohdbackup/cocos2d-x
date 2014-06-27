@@ -1288,5 +1288,62 @@
     <Filter Include="Classes\UITest\CocoStudioGUITest">
       <UniqueIdentifier>{6d2ba8df-4dfb-4397-95e5-c1c5ea828696}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\CustomTest">
+      <UniqueIdentifier>{20b7ab6d-6ac0-4b6b-aa5d-93da78cca196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\CustomWidget">
+      <UniqueIdentifier>{380bb54c-01f2-441d-bd9f-9eff6948cf01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIButtonTest">
+      <UniqueIdentifier>{fe81ad30-f6be-4898-96d3-3b9f0851d213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UICheckBoxTest">
+      <UniqueIdentifier>{9e60c7d5-bbb5-4b6d-bfd4-783af7249701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIFocusTest">
+      <UniqueIdentifier>{ae6647a4-0361-4f82-be99-d1147a0240a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIImageViewTest">
+      <UniqueIdentifier>{573c6e82-4dbb-49f3-80a8-8a429ccc9ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UILayoutTest">
+      <UniqueIdentifier>{7d8634c8-7a6e-4740-9536-41dba180e248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIListViewTest">
+      <UniqueIdentifier>{69f397bb-8c9d-49a6-9b1b-eb3821c680bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UILoadingBarTest">
+      <UniqueIdentifier>{126bf020-c97c-4018-85a6-dcb9653df940}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIPageViewTest">
+      <UniqueIdentifier>{95c4a586-0103-4ee9-a380-0789b469fba3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIRichTextTest">
+      <UniqueIdentifier>{ba37cd56-599b-4f1c-a0fe-7678af948142}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIScrollViewTest">
+      <UniqueIdentifier>{a9dd684a-659a-4efc-8868-712604b4b95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UISliderTest">
+      <UniqueIdentifier>{f78f7653-2b69-4ba4-a4de-5390eec6382d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UITextAtlasTest">
+      <UniqueIdentifier>{b1936762-20de-46c2-ab4b-c783ce925186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UITextBMFontTest">
+      <UniqueIdentifier>{0946ab71-38f2-4401-88dd-b653f3f91e5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UITextFieldTest">
+      <UniqueIdentifier>{c6bbf428-467f-43a7-a385-5539b0df0a89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UITextTest">
+      <UniqueIdentifier>{d5812cbe-afdf-4ebd-91e4-e5f3b0aabf97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIVideoPlayerTest">
+      <UniqueIdentifier>{904ebc98-3a36-4683-a979-2e97c03f7c54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest\UIWidgetAddNodeTest">
+      <UniqueIdentifier>{f9f1e0a3-e973-42ca-846b-40b955ed767f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
