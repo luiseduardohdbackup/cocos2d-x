@@ -557,6 +557,63 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\Sprite3DTest\Sprite3DTest.h">
       <Filter>Classes\Sprite3DTest</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\SpriteTest\SpriteTest.h">
+      <Filter>Classes\SpriteTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TextInputTest\TextInputTest.h">
+      <Filter>Classes\TextInputTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\Texture2dTest\Texture2dTest.h">
+      <Filter>Classes\Texture2dTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TextureCacheTest\TextureCacheTest.h">
+      <Filter>Classes\TextureCacheTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TexturePackerEncryptionTest\TextureAtlasEncryptionTest.h">
+      <Filter>Classes\TexturePackerEncryptionTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TileMapTest\TileMapTest.h">
+      <Filter>Classes\TileMapTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\Ball.h">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\Paddle.h">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\TouchesTest.h">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TransitionsTest\TransitionsTest.h">
+      <Filter>Classes\TransitionsTest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\UITest.h">
+      <Filter>Classes\UITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CocosGUIScene.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CocoStudioGUITest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomGUIScene.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\GUIEditorTest.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScene.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScene_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager_Editor.h">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.cpp">
@@ -905,6 +962,63 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\Sprite3DTest\Sprite3DTest.cpp">
       <Filter>Classes\Sprite3DTest</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\SpriteTest\SpriteTest.cpp">
+      <Filter>Classes\SpriteTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TextInputTest\TextInputTest.cpp">
+      <Filter>Classes\TextInputTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\Texture2dTest\Texture2dTest.cpp">
+      <Filter>Classes\Texture2dTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TextureCacheTest\TextureCacheTest.cpp">
+      <Filter>Classes\TextureCacheTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TexturePackerEncryptionTest\TextureAtlasEncryptionTest.cpp">
+      <Filter>Classes\TexturePackerEncryptionTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TileMapTest\TileMapTest.cpp">
+      <Filter>Classes\TileMapTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\Ball.cpp">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\Paddle.cpp">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TouchesTest\TouchesTest.cpp">
+      <Filter>Classes\TouchesTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\TransitionsTest\TransitionsTest.cpp">
+      <Filter>Classes\TransitionsTest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\UITest.cpp">
+      <Filter>Classes\UITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CocosGUIScene.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CocoStudioGUITest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\CustomGUIScene.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\GUIEditorTest.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScene.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UIScene_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\UITest\CocoStudioGUITest\UISceneManager_Editor.cpp">
+      <Filter>Classes\UITest\CocoStudioGUITest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Common">
@@ -1170,6 +1284,9 @@
     </Filter>
     <Filter Include="Classes\ExtensionsTest\ControlExtensionTest\CCControlSwitchTest">
       <UniqueIdentifier>{903e4e92-7936-46e0-bd73-2ad87a014791}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest\CocoStudioGUITest">
+      <UniqueIdentifier>{6d2ba8df-4dfb-4397-95e5-c1c5ea828696}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
