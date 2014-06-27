@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Assets">
+      <UniqueIdentifier>a86c00ad-91ce-43d2-a276-faf9a0abac57</UniqueIdentifier>
+      <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
+    </Filter>
+    <Image Include="Assets\Logo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SmallLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\StoreLogo.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Image Include="Assets\SplashScreen.png">
+      <Filter>Assets</Filter>
+    </Image>
+    <Filter Include="arm-dlls">
+      <UniqueIdentifier>{2dd7d7f9-964f-47ad-b3c5-9a790cd7a053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32-dlls">
+      <UniqueIdentifier>{64b2e32e-b220-4967-a147-4e9878ee93f3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App.xaml.cpp" />
+    <ClCompile Include="MainPage.xaml.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.xaml.h" />
+    <ClInclude Include="MainPage.xaml.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TemporaryKey.pfx" />
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\win32\libEGL.dll">
+      <Filter>win32-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\win32\libGLESv2.dll">
+      <Filter>win32-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\arm\libEGL.dll">
+      <Filter>arm-dlls</Filter>
+    </None>
+    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\arm\libGLESv2.dll">
+      <Filter>arm-dlls</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="MainPage.xaml" />
+  </ItemGroup>
+</Project>

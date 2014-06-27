@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{10d89044-5728-4a52-9b0b-cefeb15c809c}</ItemsProjectGuid>
+    <ItemsRootNamespace>cpp_empty_test</ItemsRootNamespace>
+    <ItemsProjectName>cpp-empty-test.Shared</ItemsProjectName>
+    <SharedGUID>e0af508c-a503-494c-a3e1-e7fa37dd18aa</SharedGUID>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\DeviceResources.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\InputEvent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\Renderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\BaseTest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testBasic.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\VisibleRect.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp">
+      <PrecompiledHeader>Create</PrecompiledHeader>
+    </ClCompile>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AngleHelper.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\DeviceResources.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\InputEvent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\Renderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\StepTimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\AppDelegate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\BaseTest.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testBasic.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testResource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\tests.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\VisibleRect.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <_CustomResource Include="$(MSBuildThisFileDirectory)..\..\..\Resources\**\*">
+      <Link>Assets\Resources\%(RecursiveDir)%(FileName)%(Extension)</Link>
+      <DeploymentContent>true</DeploymentContent>
+    </_CustomResource>
+  </ItemGroup>
+  <Target Name="_CollectCustomResources" BeforeTargets="AssignTargetPaths">
+    <Message Text="Adding resource: %(_CustomResource.Identity) -&gt; %(_CustomResource.Link)" />
+    <ItemGroup>
+      <None Include="@(_CustomResource)" />
+    </ItemGroup>
+  </Target>
+</Project>

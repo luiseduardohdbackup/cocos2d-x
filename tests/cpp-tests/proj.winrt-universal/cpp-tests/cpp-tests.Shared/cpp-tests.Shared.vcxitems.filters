@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AngleHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\DeviceResources.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\InputEvent.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\Renderer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\BaseTest.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testBasic.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testResource.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\tests.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\Classes\VisibleRect.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\AppMain.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\DeviceResources.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\InputEvent.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cocos\platform\winrt-universal\Common\Renderer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\BaseTest.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\controller.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\testBasic.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\Classes\VisibleRect.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Common">
+      <UniqueIdentifier>{e0af508c-a503-494c-a3e1-e7fa37dd18aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{072ce436-170f-4d3e-91b0-2bbfbfdc1b21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ActionManagerTest">
+      <UniqueIdentifier>{9d55ddb9-bf22-4360-9d49-c07d3816210a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ActionsEaseTest">
+      <UniqueIdentifier>{67dd3998-55d3-4df9-a28e-83ba9d32a85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ActionsProgressTest">
+      <UniqueIdentifier>{71eb49b4-6c8e-43e6-8f7f-86b1be7ea152}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ActionsTest">
+      <UniqueIdentifier>{6c39910f-c55b-43f4-ae83-a1885e2af212}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Box2DTest">
+      <UniqueIdentifier>{0bcd5b81-948b-417f-afb4-9fa5b4b45a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Box2DTestBed">
+      <UniqueIdentifier>{2cbd044d-a31c-47b6-b96b-3bb69196a0b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\BugsTest">
+      <UniqueIdentifier>{f9bc5b0d-018c-48ee-ba72-9fa8dfe0d1e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ChipmunkTest">
+      <UniqueIdentifier>{3e8b2a1b-b92e-4e95-a32f-bee39d3dac25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ClickAndMoveTest">
+      <UniqueIdentifier>{087f7884-219d-47d8-a41f-e2fb22a0acaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ClippingNodeTest">
+      <UniqueIdentifier>{617e380a-274b-4517-bcd9-b9681ef98b06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CocosDenshionTest">
+      <UniqueIdentifier>{b46e9aa3-3fef-45b6-99b4-9afc0e96633c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ConfigurationTest">
+      <UniqueIdentifier>{a1f70ca3-ac61-4691-86f5-4a943262756d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ConsoleTest">
+      <UniqueIdentifier>{743b322a-7d42-4261-838f-213a0a47123b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CurlTest">
+      <UniqueIdentifier>{92b5786e-38b3-4d65-94d5-fce5a40c3d7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\CurrentLanguageTest">
+      <UniqueIdentifier>{73b7e91e-cac7-439e-a17e-5b5a1b59bc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DataVisitorTest">
+      <UniqueIdentifier>{f80d1ef4-eec4-4ab9-b002-91218d919d14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\DrawPrimitivesTest">
+      <UniqueIdentifier>{ddca3413-0c66-4d21-8116-5be0b2f4bf82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EffectsAdvancedTest">
+      <UniqueIdentifier>{c0c89a20-7638-419e-964a-7ec3c7d1f72e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EffectsTest">
+      <UniqueIdentifier>{4fe3f8d7-b62e-45b0-9e29-8cc5b118aff8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ExtensionsTest">
+      <UniqueIdentifier>{7c33a836-1eb3-47a8-a9d4-8952043b389f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FileUtilsTest">
+      <UniqueIdentifier>{2cef8a1e-03df-4fdc-85ee-17548a00aa5b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\FontTest">
+      <UniqueIdentifier>{56f30dcd-11c2-4d25-8b20-38c087415f2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\InputTest">
+      <UniqueIdentifier>{1f7cbd3f-a739-4ef3-968a-222fc3494b1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\IntervalTest">
+      <UniqueIdentifier>{4b5201b9-4d41-4116-9ae3-b8073e5dcbdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\LabelTest">
+      <UniqueIdentifier>{715eff72-7293-4a49-8dc9-f7eb93100034}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\LayerTest">
+      <UniqueIdentifier>{072c3bf8-fb24-4286-b562-98af6feffb3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MenuTest">
+      <UniqueIdentifier>{5e7b1f4a-1f47-464a-865b-724fbff7911f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MotionStreakTest">
+      <UniqueIdentifier>{9dd8199c-cbd5-46c2-bf21-42acbcca27cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\MutiTouchTest">
+      <UniqueIdentifier>{74893f4e-3823-4c96-a6ba-cd5341d2a4a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NewEventDispatcherTest">
+      <UniqueIdentifier>{b0ba9e44-b0b6-42ff-a18f-9c07e27f4896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NewRendererTest">
+      <UniqueIdentifier>{50826166-0574-48db-ac4f-fd4a04d75dd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\NodeTest">
+      <UniqueIdentifier>{c2a3b903-f1d9-4edb-84de-fd1cc1a2d83f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ParallaxTest">
+      <UniqueIdentifier>{58cdd6a1-4ba5-4362-9906-45ee7523ccea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ParticleTest">
+      <UniqueIdentifier>{745fb0e5-064d-416a-841d-988154e9515c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PerformanceTest">
+      <UniqueIdentifier>{0019cbf8-80bc-492a-99d5-27b5184c6dde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\PhysicsTest">
+      <UniqueIdentifier>{1bda83aa-f137-46ad-9106-2972708e6cef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ReleasePoolTest">
+      <UniqueIdentifier>{fff04e30-c550-4c9d-9303-d82a52b1d68b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\RenderTextureTest">
+      <UniqueIdentifier>{b39acded-04ff-44ab-97cf-6596ac95c530}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\RotateWorldTest">
+      <UniqueIdentifier>{ccbd2022-45b4-41f6-91d1-fc02b2de3050}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SceneTest">
+      <UniqueIdentifier>{7819fe4d-3dd6-4985-b359-a37ab4529045}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SchedulerTest">
+      <UniqueIdentifier>{60121305-2366-4536-a0b3-8fbfdbbcb2fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ShaderTest">
+      <UniqueIdentifier>{379bc003-4176-4cf6-bd4a-ba264415c154}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SpineTest">
+      <UniqueIdentifier>{87cf5bd2-d13f-4d70-a534-2ac4b76eb6ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Sprite3DTest">
+      <UniqueIdentifier>{7f128677-7875-446f-a8d6-f29bf526e081}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\SpriteTest">
+      <UniqueIdentifier>{5cee04ac-1463-4471-90a8-22b6cbf19d50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TextInputTest">
+      <UniqueIdentifier>{23329cde-74d8-40aa-8422-a4fd95ef1fde}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Texture2dTest">
+      <UniqueIdentifier>{79258181-8f40-4eee-93b9-74ed199eb79c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TextureCacheTest">
+      <UniqueIdentifier>{fcd663c8-ded1-45ef-a239-0de5e3e453ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TexturePackerEncryptionTest">
+      <UniqueIdentifier>{cff25343-e595-4706-a3d8-f422682ff549}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TileMapTest">
+      <UniqueIdentifier>{41feb468-da85-4410-8b8b-2c98fe7f0ce8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TouchesTest">
+      <UniqueIdentifier>{2aefb97f-277c-4673-a86d-0cdbf19686a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\TransitionsTest">
+      <UniqueIdentifier>{ca1229a8-8d97-4b8e-b58e-3f3b61c67801}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UITest">
+      <UniqueIdentifier>{a912f5e8-a272-4014-800c-888c52bf90e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UnitTest">
+      <UniqueIdentifier>{0accc68b-ef3e-4ac1-bdd2-3aeb77fcbf85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\UserDefaultTest">
+      <UniqueIdentifier>{c75b011e-3604-4120-a51c-38a5ccfd122b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\ZwoptexTest">
+      <UniqueIdentifier>{dd781871-5f18-443c-82c3-9b60d3a94bbf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
