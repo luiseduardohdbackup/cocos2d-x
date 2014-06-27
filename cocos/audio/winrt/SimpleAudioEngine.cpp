@@ -40,6 +40,14 @@ Audio* s_audioController = NULL;
 // see also in SimpleAudioEngine::end() in this file
 bool s_bAudioControllerNeedReInitialize = true;
 
+bool s_initialized = false;
+
+SimpleAudioEngine* SimpleAudioEngine::getInstance()
+{
+    static SimpleAudioEngine s_SharedEngine;
+    return &s_SharedEngine;
+}
+
 static Audio* sharedAudioController()
 {
     if ((! s_audioController) || s_bAudioControllerNeedReInitialize)
