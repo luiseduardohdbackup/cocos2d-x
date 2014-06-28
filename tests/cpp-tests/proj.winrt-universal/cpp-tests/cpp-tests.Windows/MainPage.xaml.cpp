@@ -87,7 +87,6 @@ MainPage::MainPage():
 	m_inputLoopWorker = ThreadPool::RunAsync(workItemHandler, WorkItemPriority::High, WorkItemOptions::TimeSliced);
 
     m_main = std::unique_ptr<AppMain>(new AppMain(m_deviceResources));
-	m_main->StartRenderLoop();
 }
 
 MainPage::~MainPage()
