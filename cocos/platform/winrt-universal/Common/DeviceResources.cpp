@@ -6,8 +6,8 @@
 #include <stdexcept>
 #include <algorithm>
 
-using namespace D2D1;
 using namespace DirectX;
+using namespace D2D1;
 using namespace Microsoft::WRL;
 using namespace Windows::Foundation;
 using namespace Windows::Graphics::Display;
