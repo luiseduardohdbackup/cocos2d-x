@@ -35,6 +35,11 @@ THE SOFTWARE.
 #include "EGL/eglplatform.h"
 #include "GLES2/gl2.h"
 #include "GLES2/gl2ext.h"
+#if CC_TARGET_PLATFORM != CC_PLATFORM_WP8
+#include "GLES3/gl3.h"
+#include "GLES3/gl3ext.h"
+#endif
+
 #include "winrtangle.h"
 
 #ifndef GL_GLEXT_PROTOTYPES
@@ -50,6 +55,7 @@ THE SOFTWARE.
 
 #define	glClearDepth				glClearDepthf
 
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WP8
 
 inline void glGenVertexArrays(GLsizei n, GLuint *arrays)
 {
@@ -77,8 +83,11 @@ inline GLboolean glUnmapBuffer(GLenum targets)
    CCASSERT(false, "AngleProject does not implement glUnmapBufferOES"); 
    return false;
 }
-
 #define GL_DEPTH24_STENCIL8			GL_DEPTH24_STENCIL8_OES
+
+#endif
+
+
 #define GL_WRITE_ONLY				GL_WRITE_ONLY_OES
 
 #endif // __CCGL_ANGLE_H__
