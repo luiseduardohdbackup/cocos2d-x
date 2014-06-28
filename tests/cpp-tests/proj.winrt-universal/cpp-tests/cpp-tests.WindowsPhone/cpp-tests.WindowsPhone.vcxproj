@@ -80,7 +80,7 @@
   <ItemDefinitionGroup Condition="'$(Platform)'=='Win32'">
     <Link>
       <AdditionalLibraryDirectories>$(EngineRoot)external\winrt-specific\angle\prebuilt\wp8_1\$(Platform);%(AdditionalLibraryDirectories);$(WindowsPhoneSDK_LibraryPath_x86)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;DXGI.lib;D3D11.lib;D2D1.lib;DWrite.lib;xaudio2.lib;Mfplat.lib;Mfreadwrite.lib;mfuuid.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;DXGI.lib;D3D11.lib;D2D1.lib;DWrite.lib;xaudio2.lib;Mfplat.lib;Mfreadwrite.lib;mfuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\..\Classes;$(EngineRoot)cocos\platform\winrt-universal\Common;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -96,7 +96,7 @@
   <ItemDefinitionGroup Condition="'$(Platform)'=='ARM'">
     <Link>
       <AdditionalLibraryDirectories>$(EngineRoot)external\winrt-specific\angle\prebuilt\wp8_1\$(Platform);%(AdditionalLibraryDirectories);$(WindowsPhoneSDK_LibraryPath_arm)</AdditionalLibraryDirectories>
-      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;DXGI.lib;D3D11.lib;D2D1.lib;DWrite.lib;xaudio2.lib;Mfplat.lib;Mfreadwrite.lib;mfuuid.lib;libEGL.lib;libGLESv2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>WindowsPhoneCore.lib;RuntimeObject.lib;PhoneAppModelHost.lib;DXGI.lib;D3D11.lib;D2D1.lib;DWrite.lib;xaudio2.lib;Mfplat.lib;Mfreadwrite.lib;mfuuid.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <ClCompile>
       <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">..\..\..\Classes;$(EngineRoot)cocos\platform\winrt-universal\Common;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
@@ -148,6 +148,12 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\angle\projects\src\libEGL_UA\libEGL_UA.WindowsPhone\libEGL_UA.WindowsPhone.vcxproj">
+      <Project>{83a28ac5-cd9d-4dce-82bc-aa8416f385d2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.WindowsPhone\libGLESv2_UA.WindowsPhone.vcxproj">
+      <Project>{c389feeb-2480-42f8-b93c-1f87db06b54d}</Project>
+    </ProjectReference>
     <ProjectReference Include="..\..\..\..\..\cocos\2d\proj.winrt-universal\libcocos2d\libcocos2d.WindowsPhone\libcocos2d.WindowsPhone.vcxproj">
       <Project>{b9a2dc9c-8f6d-413d-a464-4c2688a3f8eb}</Project>
     </ProjectReference>
@@ -181,20 +187,20 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\arm\libEGL.dll">
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</DeploymentContent>
     </None>
     <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\arm\libGLESv2.dll">
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">false</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">false</DeploymentContent>
     </None>
     <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\win32\libEGL.dll">
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</DeploymentContent>
     </None>
     <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\wp8_1\win32\libGLESv2.dll">
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</DeploymentContent>
-      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</DeploymentContent>
     </None>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

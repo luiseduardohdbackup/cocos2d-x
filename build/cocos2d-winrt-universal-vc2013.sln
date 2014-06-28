@@ -99,13 +99,49 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-tests.Windows", "..\tes
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cpp-tests.WindowsPhone", "..\tests\cpp-tests\proj.winrt-universal\cpp-tests\cpp-tests.WindowsPhone\cpp-tests.WindowsPhone.vcxproj", "{C0B4FF46-5EC3-4D4C-8AD9-33390B2614EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Angle", "Angle", "{4392CE77-CE8C-4703-B391-C5DCA11A8418}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libEGL", "libEGL", "{289381E7-929F-4124-A96F-C40AC4485122}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "libGLESv2", "libGLESv2", "{AA534E3D-70B3-4DD3-9EAA-96B05DB6985E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "preprocessor", "preprocessor", "{DDBFFFF6-4A3B-49A8-B9F7-6F1FA3FF8ADA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "translator", "translator", "{9EEF153A-9990-4FD4-89FE-A98290634F6E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libEGL_UA.Shared", "..\..\angle\projects\src\libEGL_UA\libEGL_UA.Shared\libEGL_UA.Shared.vcxitems", "{9258FA5C-E335-4419-BF3C-E6130C84B5B5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libEGL_UA.Windows", "..\..\angle\projects\src\libEGL_UA\libEGL_UA.Windows\libEGL_UA.Windows.vcxproj", "{19C18022-140E-4B99-BFD8-0F05E63365D7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libEGL_UA.WindowsPhone", "..\..\angle\projects\src\libEGL_UA\libEGL_UA.WindowsPhone\libEGL_UA.WindowsPhone.vcxproj", "{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGLESv2_UA.Shared", "..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.Shared\libGLESv2_UA.Shared.vcxitems", "{8C4995FB-813C-4F26-B9E4-6AF2664495F7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGLESv2_UA.Windows", "..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.Windows\libGLESv2_UA.Windows.vcxproj", "{2F73E65C-1A04-475B-ACAF-B94AE0805A11}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libGLESv2_UA.WindowsPhone", "..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.WindowsPhone\libGLESv2_UA.WindowsPhone.vcxproj", "{C389FEEB-2480-42F8-B93C-1F87DB06B54D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocessor_UA.Shared", "..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.Shared\preprocessor_UA.Shared.vcxitems", "{0229E549-B25E-49C3-9D8E-65EA190B45F5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocessor_UA.Windows", "..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.Windows\preprocessor_UA.Windows.vcxproj", "{97CD511C-C644-4376-988B-475574400D12}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "preprocessor_UA.WindowsPhone", "..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.WindowsPhone\preprocessor_UA.WindowsPhone.vcxproj", "{0EE17382-3DAE-426D-81AD-ED4107706FF7}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "translator_UA.Shared", "..\..\angle\projects\src\translator_UA\translator_UA.Shared\translator_UA.Shared.vcxitems", "{E2361617-06B0-46A9-B3EA-1C72A8CF7DDF}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "translator_UA.Windows", "..\..\angle\projects\src\translator_UA\translator_UA.Windows\translator_UA.Windows.vcxproj", "{A9AE9652-C5DC-45AD-889F-088CA5517795}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "translator_UA.WindowsPhone", "..\..\angle\projects\src\translator_UA\translator_UA.WindowsPhone\translator_UA.WindowsPhone.vcxproj", "{BAE6232F-520C-4895-B934-CAF6D0C643C4}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{75c37b89-d8bf-41b1-8dfd-2a368371f258}*SharedItemsImports = 4
 		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{10d89044-5728-4a52-9b0b-cefeb15c809c}*SharedItemsImports = 9
 		..\extensions\proj.winrt-universal\libExtensions\libExtensions.Shared\libExtensions.Shared.vcxitems*{b4868c69-c470-4ae0-b8ea-faa34db7d964}*SharedItemsImports = 4
+		..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.Shared\libGLESv2_UA.Shared.vcxitems*{2f73e65c-1a04-475b-acaf-b94ae0805a11}*SharedItemsImports = 4
 		..\cocos\2d\proj.winrt-universal\libcocos2d\libcocos2d.Shared\libcocos2d.Shared.vcxitems*{424f0c97-6b8d-409b-8dd9-a78f2ee89972}*SharedItemsImports = 4
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{c416026e-f95f-4ba3-bdd3-ad8bf76c600f}*SharedItemsImports = 4
+		..\..\angle\projects\src\libEGL_UA\libEGL_UA.Shared\libEGL_UA.Shared.vcxitems*{9258fa5c-e335-4419-bf3c-e6130c84b5b5}*SharedItemsImports = 9
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{0092f954-9a62-481f-8bba-0797f772b96c}*SharedItemsImports = 9
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e41d38f4-8dfa-454b-8abe-f6e7834cc598}*SharedItemsImports = 9
 		..\cocos\audio\proj.winrt-universal\CocosDenshion\CocosDenshion.Shared\CocosDenshion.Shared.vcxitems*{ddd2cf0f-8613-4b80-891f-fe67131a0104}*SharedItemsImports = 9
@@ -114,24 +150,34 @@ Global
 		..\cocos\storage\local-storage\proj.winrt-universal\libLocalStorage\libLocalStorage.Shared\libLocalStorage.Shared.vcxitems*{4ab0244a-9639-45ec-8451-6d4e466dcb00}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{b2fc1dfe-90a5-4464-8691-982faecae678}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{03d19f61-c444-4126-8627-0a1aee8b81a5}*SharedItemsImports = 4
+		..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.Shared\preprocessor_UA.Shared.vcxitems*{0229e549-b25e-49c3-9d8e-65ea190b45f5}*SharedItemsImports = 9
+		..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.Shared\preprocessor_UA.Shared.vcxitems*{0ee17382-3dae-426d-81ad-ed4107706ff7}*SharedItemsImports = 4
+		..\..\angle\projects\src\libEGL_UA\libEGL_UA.Shared\libEGL_UA.Shared.vcxitems*{83a28ac5-cd9d-4dce-82bc-aa8416f385d2}*SharedItemsImports = 4
 		..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{1ca9317c-4bf8-4a88-83cb-b21d34c0b54a}*SharedItemsImports = 9
 		..\cocos\storage\local-storage\proj.winrt-universal\libLocalStorage\libLocalStorage.Shared\libLocalStorage.Shared.vcxitems*{3b585d79-4749-45a2-bbfd-9268cc234438}*SharedItemsImports = 9
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{cc297eb9-561b-47fb-bb4f-69f49dd78597}*SharedItemsImports = 4
+		..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.Shared\libGLESv2_UA.Shared.vcxitems*{c389feeb-2480-42f8-b93c-1f87db06b54d}*SharedItemsImports = 4
+		..\..\angle\projects\src\translator_UA\translator_UA.Shared\translator_UA.Shared.vcxitems*{e2361617-06b0-46a9-b3ea-1c72a8cf7ddf}*SharedItemsImports = 9
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{4f56a672-e128-4f43-9b31-52b172f7a0bf}*SharedItemsImports = 9
 		..\external\Box2D\proj.winrt-universal\Box2D\Box2D.Shared\Box2D.Shared.vcxitems*{15e2d861-b840-42fd-bae4-5188c96a2124}*SharedItemsImports = 4
+		..\..\angle\projects\src\libEGL_UA\libEGL_UA.Shared\libEGL_UA.Shared.vcxitems*{19c18022-140e-4b99-bfd8-0f05e63365d7}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{40a73243-96a4-4b99-aebe-d2dfa28c6741}*SharedItemsImports = 9
 		..\cocos\editor-support\spine\proj.winrt-universal\libSpine\libSpine.Shared\libSpine.Shared.vcxitems*{313d61af-242c-4620-9518-1178eaa70cee}*SharedItemsImports = 4
 		..\extensions\proj.winrt-universal\libExtensions\libExtensions.Shared\libExtensions.Shared.vcxitems*{4319c665-8acb-4386-a34d-c384b533dc5f}*SharedItemsImports = 9
 		..\cocos\audio\proj.winrt-universal\CocosDenshion\CocosDenshion.Shared\CocosDenshion.Shared.vcxitems*{9d3a068b-0008-46aa-bec3-92d9f9783eb3}*SharedItemsImports = 4
+		..\..\angle\projects\src\preprocessor_UA\preprocessor_UA.Shared\preprocessor_UA.Shared.vcxitems*{97cd511c-c644-4376-988b-475574400d12}*SharedItemsImports = 4
 		..\external\chipmunk\proj.winrt-universal\chipmunk\chipmunk.Shared\chipmunk.Shared.vcxitems*{2ca6e6a9-b1aa-4144-a630-8ab928966631}*SharedItemsImports = 4
 		..\cocos\audio\proj.winrt-universal\CocosDenshion\CocosDenshion.Shared\CocosDenshion.Shared.vcxitems*{8ae63c48-0fe6-4972-807c-9dcc85f15e83}*SharedItemsImports = 4
 		..\cocos\editor-support\cocosbuilder\proj.winrt-universal\libCocosBuilder\libCocosBuilder.Shared\libCocosBuilder.Shared.vcxitems*{e544493c-38a2-49d9-aa92-c5587a6b3474}*SharedItemsImports = 4
+		..\..\angle\projects\src\translator_UA\translator_UA.Shared\translator_UA.Shared.vcxitems*{bae6232f-520c-4895-b934-caf6d0c643c4}*SharedItemsImports = 4
 		..\cocos\editor-support\cocostudio\proj.winrt-universal\libCocosStudio\libCocosStudio.Shared\libCocosStudio.Shared.vcxitems*{0c4dfc12-dd2b-4a29-b6f4-fe6015524e24}*SharedItemsImports = 4
 		..\extensions\proj.winrt-universal\libExtensions\libExtensions.Shared\libExtensions.Shared.vcxitems*{fa033dc6-1489-4e95-bfa9-d49baa3583be}*SharedItemsImports = 4
 		..\cocos\storage\local-storage\proj.winrt-universal\libLocalStorage\libLocalStorage.Shared\libLocalStorage.Shared.vcxitems*{a6ef933c-e654-43ab-9b35-7a09909cfc43}*SharedItemsImports = 4
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{d9d4007f-e49c-4074-9abd-01702a694a8a}*SharedItemsImports = 4
 		..\tests\cpp-empty-test\proj.winrt-universal\cpp-empty-test\cpp-empty-test.Shared\cpp-empty-test.Shared.vcxitems*{f4dbdd4a-b8c1-4582-8f70-0ca09a6ca573}*SharedItemsImports = 4
 		..\cocos\2d\proj.winrt-universal\libcocos2d\libcocos2d.Shared\libcocos2d.Shared.vcxitems*{44905cf1-236e-4539-a5a4-30186c95477e}*SharedItemsImports = 9
+		..\..\angle\projects\src\translator_UA\translator_UA.Shared\translator_UA.Shared.vcxitems*{a9ae9652-c5dc-45ad-889f-088ca5517795}*SharedItemsImports = 4
+		..\..\angle\projects\src\libGLESv2_UA\libGLESv2_UA.Shared\libGLESv2_UA.Shared.vcxitems*{8c4995fb-813c-4f26-b9e4-6af2664495f7}*SharedItemsImports = 9
 		..\cocos\ui\proj.winrt-universal\libGUI\libGUI.Shared\libGUI.Shared.vcxitems*{4afb15ba-1f2b-4ef5-858c-3c36245ff18c}*SharedItemsImports = 9
 		..\tests\cpp-tests\proj.winrt-universal\cpp-tests\cpp-tests.Shared\cpp-tests.Shared.vcxitems*{fd8277a7-f038-42ba-9f04-797bd9985180}*SharedItemsImports = 9
 		..\tests\cpp-tests\proj.winrt-universal\cpp-tests\cpp-tests.Shared\cpp-tests.Shared.vcxitems*{440d95ae-6918-40fe-be1a-5bc088de8d7f}*SharedItemsImports = 4
@@ -431,6 +477,94 @@ Global
 		{C0B4FF46-5EC3-4D4C-8AD9-33390B2614EE}.Release|Win32.Build.0 = Release|Win32
 		{C0B4FF46-5EC3-4D4C-8AD9-33390B2614EE}.Release|Win32.Deploy.0 = Release|Win32
 		{C0B4FF46-5EC3-4D4C-8AD9-33390B2614EE}.Release|x64.ActiveCfg = Release|Win32
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|ARM.ActiveCfg = Debug|ARM
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|ARM.Build.0 = Debug|ARM
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|Win32.Build.0 = Debug|Win32
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|x64.ActiveCfg = Debug|x64
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Debug|x64.Build.0 = Debug|x64
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|ARM.ActiveCfg = Release|ARM
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|ARM.Build.0 = Release|ARM
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|Win32.ActiveCfg = Release|Win32
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|Win32.Build.0 = Release|Win32
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|x64.ActiveCfg = Release|x64
+		{19C18022-140E-4B99-BFD8-0F05E63365D7}.Release|x64.Build.0 = Release|x64
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Debug|ARM.ActiveCfg = Debug|ARM
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Debug|ARM.Build.0 = Debug|ARM
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Debug|Win32.Build.0 = Debug|Win32
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Debug|x64.ActiveCfg = Debug|Win32
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Release|ARM.ActiveCfg = Release|ARM
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Release|ARM.Build.0 = Release|ARM
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Release|Win32.ActiveCfg = Release|Win32
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Release|Win32.Build.0 = Release|Win32
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2}.Release|x64.ActiveCfg = Release|Win32
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|ARM.ActiveCfg = Debug|ARM
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|ARM.Build.0 = Debug|ARM
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|Win32.Build.0 = Debug|Win32
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|x64.ActiveCfg = Debug|x64
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Debug|x64.Build.0 = Debug|x64
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|ARM.ActiveCfg = Release|ARM
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|ARM.Build.0 = Release|ARM
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|Win32.ActiveCfg = Release|Win32
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|Win32.Build.0 = Release|Win32
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|x64.ActiveCfg = Release|x64
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11}.Release|x64.Build.0 = Release|x64
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Debug|ARM.ActiveCfg = Debug|ARM
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Debug|ARM.Build.0 = Debug|ARM
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Debug|Win32.Build.0 = Debug|Win32
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Debug|x64.ActiveCfg = Debug|Win32
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Release|ARM.ActiveCfg = Release|ARM
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Release|ARM.Build.0 = Release|ARM
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Release|Win32.ActiveCfg = Release|Win32
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Release|Win32.Build.0 = Release|Win32
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D}.Release|x64.ActiveCfg = Release|Win32
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|ARM.ActiveCfg = Debug|ARM
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|ARM.Build.0 = Debug|ARM
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|Win32.Build.0 = Debug|Win32
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|x64.ActiveCfg = Debug|x64
+		{97CD511C-C644-4376-988B-475574400D12}.Debug|x64.Build.0 = Debug|x64
+		{97CD511C-C644-4376-988B-475574400D12}.Release|ARM.ActiveCfg = Release|ARM
+		{97CD511C-C644-4376-988B-475574400D12}.Release|ARM.Build.0 = Release|ARM
+		{97CD511C-C644-4376-988B-475574400D12}.Release|Win32.ActiveCfg = Release|Win32
+		{97CD511C-C644-4376-988B-475574400D12}.Release|Win32.Build.0 = Release|Win32
+		{97CD511C-C644-4376-988B-475574400D12}.Release|x64.ActiveCfg = Release|x64
+		{97CD511C-C644-4376-988B-475574400D12}.Release|x64.Build.0 = Release|x64
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Debug|ARM.ActiveCfg = Debug|ARM
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Debug|ARM.Build.0 = Debug|ARM
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Debug|Win32.Build.0 = Debug|Win32
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Debug|x64.ActiveCfg = Debug|Win32
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Release|ARM.ActiveCfg = Release|ARM
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Release|ARM.Build.0 = Release|ARM
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Release|Win32.ActiveCfg = Release|Win32
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Release|Win32.Build.0 = Release|Win32
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7}.Release|x64.ActiveCfg = Release|Win32
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|ARM.ActiveCfg = Debug|ARM
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|ARM.Build.0 = Debug|ARM
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|Win32.Build.0 = Debug|Win32
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|x64.ActiveCfg = Debug|x64
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Debug|x64.Build.0 = Debug|x64
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|ARM.ActiveCfg = Release|ARM
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|ARM.Build.0 = Release|ARM
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|Win32.ActiveCfg = Release|Win32
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|Win32.Build.0 = Release|Win32
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|x64.ActiveCfg = Release|x64
+		{A9AE9652-C5DC-45AD-889F-088CA5517795}.Release|x64.Build.0 = Release|x64
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Debug|ARM.Build.0 = Debug|ARM
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Debug|Win32.Build.0 = Debug|Win32
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Debug|x64.ActiveCfg = Debug|Win32
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Release|ARM.ActiveCfg = Release|ARM
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Release|ARM.Build.0 = Release|ARM
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Release|Win32.ActiveCfg = Release|Win32
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Release|Win32.Build.0 = Release|Win32
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4}.Release|x64.ActiveCfg = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -472,5 +606,21 @@ Global
 		{FD8277A7-F038-42BA-9F04-797BD9985180} = {4966093C-A3CF-4AE4-BC53-597A734DA2CD}
 		{440D95AE-6918-40FE-BE1A-5BC088DE8D7F} = {4966093C-A3CF-4AE4-BC53-597A734DA2CD}
 		{C0B4FF46-5EC3-4D4C-8AD9-33390B2614EE} = {4966093C-A3CF-4AE4-BC53-597A734DA2CD}
+		{289381E7-929F-4124-A96F-C40AC4485122} = {4392CE77-CE8C-4703-B391-C5DCA11A8418}
+		{AA534E3D-70B3-4DD3-9EAA-96B05DB6985E} = {4392CE77-CE8C-4703-B391-C5DCA11A8418}
+		{DDBFFFF6-4A3B-49A8-B9F7-6F1FA3FF8ADA} = {4392CE77-CE8C-4703-B391-C5DCA11A8418}
+		{9EEF153A-9990-4FD4-89FE-A98290634F6E} = {4392CE77-CE8C-4703-B391-C5DCA11A8418}
+		{9258FA5C-E335-4419-BF3C-E6130C84B5B5} = {289381E7-929F-4124-A96F-C40AC4485122}
+		{19C18022-140E-4B99-BFD8-0F05E63365D7} = {289381E7-929F-4124-A96F-C40AC4485122}
+		{83A28AC5-CD9D-4DCE-82BC-AA8416F385D2} = {289381E7-929F-4124-A96F-C40AC4485122}
+		{8C4995FB-813C-4F26-B9E4-6AF2664495F7} = {AA534E3D-70B3-4DD3-9EAA-96B05DB6985E}
+		{2F73E65C-1A04-475B-ACAF-B94AE0805A11} = {AA534E3D-70B3-4DD3-9EAA-96B05DB6985E}
+		{C389FEEB-2480-42F8-B93C-1F87DB06B54D} = {AA534E3D-70B3-4DD3-9EAA-96B05DB6985E}
+		{0229E549-B25E-49C3-9D8E-65EA190B45F5} = {DDBFFFF6-4A3B-49A8-B9F7-6F1FA3FF8ADA}
+		{97CD511C-C644-4376-988B-475574400D12} = {DDBFFFF6-4A3B-49A8-B9F7-6F1FA3FF8ADA}
+		{0EE17382-3DAE-426D-81AD-ED4107706FF7} = {DDBFFFF6-4A3B-49A8-B9F7-6F1FA3FF8ADA}
+		{E2361617-06B0-46A9-B3EA-1C72A8CF7DDF} = {9EEF153A-9990-4FD4-89FE-A98290634F6E}
+		{A9AE9652-C5DC-45AD-889F-088CA5517795} = {9EEF153A-9990-4FD4-89FE-A98290634F6E}
+		{BAE6232F-520C-4895-B934-CAF6D0C643C4} = {9EEF153A-9990-4FD4-89FE-A98290634F6E}
 	EndGlobalSection
 EndGlobal
