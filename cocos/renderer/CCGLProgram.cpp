@@ -366,8 +366,10 @@ void GLProgram::parseUniforms()
                     { 
                         CCLOG("error: 0x%x", (int)__gl_error_code);
                     } 
+#if CC_TARGET_PLATFORM != CC_PLATFORM_WINRT && CC_TARGET_PLATFORM != CC_PLATFORM_WP8
                     assert(__gl_error_code == GL_NO_ERROR);
-                    
+#endif               
+
                     _userUniforms[uniform.name] = uniform;
                 }
 			}
@@ -533,6 +535,14 @@ bool GLProgram::link()
     bindPredefinedVertexAttribs();
 
     glLinkProgram(_program);
+
+#if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT || CC_TARGET_PLATFORM == CC_PLATFORM_WP8
+    GLenum __gl_error_code = glGetError(); 
+    if (__gl_error_code != GL_NO_ERROR)
+    {
+        CCLOG("glLinkProgram failed with error: %d", __gl_error_code);
+    }
+#endif
 
     parseVertexAttribs();
     parseUniforms();
