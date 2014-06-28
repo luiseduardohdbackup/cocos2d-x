@@ -32,8 +32,11 @@ THE SOFTWARE.
 
 using namespace Windows::UI::Popups;
 using namespace Windows::UI::Xaml;
+
+#if (CC_TARGET_PLATFORM != CC_PLATFORM_WP8)
 using namespace Windows::UI::Xaml::Controls;
 using namespace Windows::UI::Xaml::Navigation;
+#endif
 
 NS_CC_BEGIN
 
