@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Assets">
@@ -40,18 +40,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="TemporaryKey.pfx" />
-    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\win32\libEGL.dll">
-      <Filter>win32-dlls</Filter>
-    </None>
-    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\win32\libGLESv2.dll">
-      <Filter>win32-dlls</Filter>
-    </None>
-    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\arm\libEGL.dll">
-      <Filter>arm-dlls</Filter>
-    </None>
-    <None Include="..\..\..\..\..\external\winrt-specific\angle\prebuilt\winrt\arm\libGLESv2.dll">
-      <Filter>arm-dlls</Filter>
-    </None>
   </ItemGroup>
   <ItemGroup>
     <Page Include="MainPage.xaml" />
