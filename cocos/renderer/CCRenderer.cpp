@@ -428,7 +428,7 @@ void Renderer::drawBatchedQuads()
         glBufferData(GL_ARRAY_BUFFER, sizeof(_quads[0]) * (_numQuads), nullptr, GL_DYNAMIC_DRAW);
 
 #if CC_TARGET_PLATFORM == CC_PLATFORM_WINRT
-        void *buf = glMapBufferRange(GL_ARRAY_BUFFER, 0, sizeof(_quads[0]) * (_numQuads), GL_MAP_WRITE_BIT | GL_MAP_INVALIDATE_BUFFER_BIT);
+        void *buf = glMapBufferRange(GL_ARRAY_BUFFER, 0, sizeof(_quads[0]) * (_numQuads), GL_MAP_WRITE_BIT);
 #else
         void *buf = glMapBuffer(GL_ARRAY_BUFFER, GL_WRITE_ONLY);
 #endif        
